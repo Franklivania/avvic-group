@@ -1,0 +1,62 @@
+@import '../../App.scss';
+
+#hero{
+    // position: absolute;
+    position: relative;
+    top: 0;
+    width: $width;
+    height: $height;
+
+    video{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($black, 0.5);
+        color: $white;
+        font-family: $header-font;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2em;
+        padding: 0 4em;
+        
+        h1{
+            font-size: $large-text;
+            width: 50%;
+            font-weight: 400;
+        }
+
+        .btn{
+            padding: 1em;
+            color: $white;
+            outline: none;
+            border: none;
+            border-radius: $small-radius;
+            background: $main;
+            cursor: pointer;
+
+            &:hover{
+                background: $accent;
+            }
+        }
+
+        .mouse{
+            position: absolute;
+            bottom: 3%;
+            align-self: center;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

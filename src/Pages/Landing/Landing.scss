@@ -1,0 +1,25 @@
+@import '../../App.scss';
+
+.landing{
+    position: relative;
+    width: 100%;
+    height: $height;
+
+    .arrow{
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        padding: .5em;
+        border-radius: $radius;
+        background: $main;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+}
+
+.section{
+    height: $height;
+    scroll-snap-align: start;
+}
