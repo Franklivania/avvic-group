@@ -1,0 +1,21 @@
+@import '../../App.scss';
+
+#info{
+    position: relative;
+    width: $width;
+    padding: 2em;
+    text-align: center;
+
+    h1{
+        font-family: $header-font;
+        font-size: $large-text;
+        color: $main;
+        font-weight: 500;
+    }
+    p{
+        font-family: $font;
+        font-size: $text;
+        color: $black;
+        font-size: $text;
+    }
+}

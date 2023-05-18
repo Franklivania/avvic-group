@@ -1,0 +1,56 @@
+@import '../../App.scss';
+
+#offers{
+    position: relative;
+    height: $height;
+    width: $width;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1/1;
+
+    .content{
+        position: relative;
+        height: 100%;
+        width: 25%;
+        overflow: hidden;
+
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: transform .5s ease-in-out;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+
+        article{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba($main, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: $white;
+            text-align: center;
+            padding: 0 1em;
+
+            h2{
+                font-family: $header-font;
+                font-size: calc($large-text * 0.9);
+            }
+            p{
+                font-family: $font;
+                font-size: $text;
+            }
+        }
+
+        article ~ img:hover{
+            transform: scale(1.2);
+        }
+    }
+}
