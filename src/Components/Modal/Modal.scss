@@ -1,0 +1,75 @@
+@import '../../App.scss';
+
+#modal{
+    position: absolute;
+    top: 0;
+    height: $height;
+    width: $width;
+    background: rgba($black, 0.6);
+    display: grid;
+    place-content: center;
+    z-index: 30;
+
+    .content{
+        position: relative;
+        height: calc($wk-height * 0.3);
+        width: calc($wk-width * 0.5);
+        padding: 1em;
+        z-index: 31;
+        background: $white;
+        border-radius: $small-radius;
+
+        #btn{
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            display: grid;
+            place-items: center;
+            border: none;
+            outline: none;
+            padding: .5em .7em;
+            border-radius: $radius;
+            background: $main;
+            color: $white;
+            z-index: 32;
+            cursor: pointer;
+
+            &:hover{
+                background: $accent;
+            }
+        }
+
+        .container{
+            position: relative;
+            display: flex;
+            gap: 1em;
+            height: 100%;
+
+            img{
+                object-fit: cover;
+                width: 45%;
+            }
+
+            aside{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                
+                
+                h1{
+                    font-family: $header-font;
+                    letter-spacing: 0.3em;
+                    color: $main;
+                }
+                
+                p{
+                    font-family: $text;
+                    font-size: $text;
+                    color: $black;
+                    // letter-spacing: .3em;
+                }
+            }
+        }
+    }
+}

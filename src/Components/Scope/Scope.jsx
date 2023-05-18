@@ -20,6 +20,7 @@ import right from '../../assets/right.png'
 import left from '../../assets/left.png'
 import SlideButton from '../SlideButton/SlideButton';
 import Button from '../Button/Button';
+import Modal from '../Modal/Modal';
 
 const Scope = ({ className }) => {
   const slides = [
@@ -35,16 +36,19 @@ const Scope = ({ className }) => {
           id: 1,
           img: agro1,
           title: 'INVENTORY TRACKER SOLUTION',
+          text: "Avvic Agro deploys an innovative inventory tracker solution. This enables farmers to effectively track crop and animal production inventory and associated variations. Predictive inventory management of necessary farm resources like fertilizer and pesticide is enabled in a collaborative manner with strategic supply chain partners"
         },
         {
           id: 2,
           img: agro2,
           title: 'PRODUCTION MANAGEMENT',
+          text: "Avvic Agro provides crop and animal production management solutions. This is built ground up based on predictive data collected, collated, and synthesized for specific farm locations. This solution gives farmers the capacity to reduce operational risks and extract more value from crop and animal production. The solution’s predictive capabilities enable farmers to navigate the most appropriate time for harvest, production logistics, disease prediction and yield improvement. It provides automation of essential farm tasks on the basis of real-time crop needs. In an external institution financed situation, the solution allows the financier to track set milestones, monitor performance, and effectively manage disbursements based on pre-set parameters."
         },
         {
           id: 3,
           img: agro3,
           title: 'FARM ACCOUNTS AND FINANCIAL MANAGEMENT',
+          text: "Avvic Agro provides a suite of tech driven accounts and financial management systems that aggregate end to end solutions for a diverse set of farm operations. This facilitates effective internal management and seamless interaction with external stakeholders."
         },
       ],
     },
@@ -59,17 +63,20 @@ const Scope = ({ className }) => {
         {
             id: 1,
             img: agro,
-            title: "AGRICULTURE"
+            title: "AGRICULTURE",
+            text: "Nigeria’s agricultural sector employs nearly 70% of the population and comprises nearly 22% of GDP"
         },
         {
             id: 2,
             img: tech1,
-            title: "INFORMATION TECHNOLOGY"
+            title: "INFORMATION TECHNOLOGY",
+            text: "Nigeria is Africa’s largest ICT market, accounting for 29% of internet usage in Africa."
         },
         {
             id: 3,
             img: financial,
-            title: "FINANCIAL SERVICES"
+            title: "FINANCIAL SERVICES",
+            text: "Nigeria’s services output ranks as the fifth largest in Africa. The potential of the Nigerian financial services sector remains enormous"
         }
       ],
     },
@@ -84,12 +91,14 @@ const Scope = ({ className }) => {
         {
             id: 1,
             img: business,
-            title: "BUSINESS AND FINANCIAL ADVISORY"
+            title: "BUSINESS AND FINANCIAL ADVISORY",
+            text: "We partner individuals and businesses to build data, develop and deploy financial solutions in an efficient manner. We harness the collective, seasoned experience of our team to provide creative financial solutions tailored to fit your specific needs."
         },
         {
             id: 2,
             img: people,
-            title: "OUR PEOPLE"
+            title: "OUR PEOPLE",
+            text: "We are a value-driven team of talented, creative individuals who work in an environment that thrives on teamwork, creativity, consistent development, and expansion of the spheres of profitable opportunities for customers and stakeholders."
         }
       ],
     },
@@ -104,22 +113,26 @@ const Scope = ({ className }) => {
         {
             id: 1,
             img: tech1,
-            title: "IT BUSINESS ANALYTICS"
+            title: "IT BUSINESS ANALYTICS",
+            text: "We harness extensive industry research and data to create strategic business decisions, streamline business visions to profitable activity in an efficient manner and integrate business intelligence into the organisation’s processes."
         },
         {
             id: 2,
             img: tech2,
-            title: "DATABASE MANAGEMENT"
+            title: "DATABASE MANAGEMENT",
+            text: "We partner individuals and businesses to build data, develop and deploy business and financial solutions in an efficient manner. Critical data is deployed and embedded in Intelligent Technologies required to drive efficient business processes."
         },
         {
             id: 3,
             img: research,
-            title: "RESEARCH AND DEVELOPMENT"
+            title: "RESEARCH AND DEVELOPMENT",
+            text: "We undertake core technical research on company products, services and market sphere and recommend the implementation of innovative products, services and processes to propel growth and development."
         },
         {
             id: 4,
             img: tech3,
-            title: "IT SYSTEMS DEVELOPMENT AND MANAGEMENT"
+            title: "IT SYSTEMS DEVELOPMENT AND MANAGEMENT",
+            text: "We build core IT Systems and Applications, ground up, based on an organisations core function to engineer the automation of the business processes."
         }
       ],
     },
@@ -134,12 +147,14 @@ const Scope = ({ className }) => {
         {
             id: 1,
             img: home1,
-            title: "REAL ESTATE ANALYTICS"
+            title: "REAL ESTATE ANALYTICS",
+            text: "Avvic Homes generates extensive industry research and data. This is synthesized to create strategic housing and real estate solutions which are streamlined into profitable activity efficiently. We integrate business intelligence into the housing and real estate processes."
         },
         {
             id: 2,
             img: people,
-            title: "OUR PEOPLE"
+            title: "OUR PEOPLE",
+            text: "Avvic Homes’ processes and solutions are driven by a team of experienced, highly talented, creative individuals. Our workplace environment thrives on teamwork, creativity, consistent development, and continuous expansion of the spheres of profitable opportunities for customers and stakeholders."
         }
       ],
     },
@@ -167,6 +182,20 @@ const Scope = ({ className }) => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
   };
 
+  const [showModal, setShowModal] = useState(false)
+  const [selectedContent, setSelectedContent] = useState(null);
+
+
+    function handleOpen(content) {
+        setSelectedContent(content);
+        setShowModal(true); 
+    }
+
+    const handleClose = () => {
+        setShowModal(false);
+    };
+  
+
   return (
     <div className={className} id='scope'>
         <div className="slide">        
@@ -189,7 +218,7 @@ const Scope = ({ className }) => {
 
                     <div className='content'>
                     {slide.content.map((item, idx) => (
-                        <div className='item' key={idx}>
+                        <div className='item' key={idx} onClick={() => handleOpen(item)}>
                         <img src={item.img} alt='' />
                         <h3>{item.title}</h3>
                         </div>
@@ -199,6 +228,13 @@ const Scope = ({ className }) => {
                 </div>
             ))}
       </div>
+      {showModal && selectedContent && (
+        <Modal closeModal={handleClose} 
+            image={selectedContent.img}
+            title={selectedContent.title}
+            text={selectedContent.text} 
+        />
+      )}
 
       <div className='slideControl'>
         <SlideButton className={'previous'} onClick={previousSlide} image={left} />
