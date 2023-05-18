@@ -28,3 +28,7 @@ $font: 'JUST Sans', sans-serif;
 $text: 1em;
 $large-text: 3em;
 $extra-large-text: 4em;
+
+::-webkit-scrollbar{
+    width: 0;
+}

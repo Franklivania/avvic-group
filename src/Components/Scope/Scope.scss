@@ -5,28 +5,169 @@
     width: $width;
     height: $height;
 
-    .slides{
+    .slide{
         position: relative;
-        width: $width;
-
-        img{
-            width: 100%;
-            object-fit: cover;
-        }
-
-        article{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        
+        .slides{
             position: absolute;
             top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
+            opacity: 0;
+            transition: transform .5s ease;
+
+            &.active {
+                opacity: 1;
+                transform: translateX(0%);
+              }
+        
+              &.prev {
+                transform: translateX(-100%);
+              }
+        
+              &.next {
+                transform: translateX(100%);
+              }
+    
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            article{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(
+                    circle,
+                    rgba($black, 0.2),
+                    rgba($black, 0.6)
+                );
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $white;
+                padding: 0 2em;
+                letter-spacing: .1em;
+                gap: 2em;
+    
+                h1{
+                    font-size: $large-text;
+                    font-family: $header-font;
+                }
+    
+                p{
+                    width: 50%;
+                    font-family: $font;
+                    font-size: $text;
+                }
+
+                .button{
+                    width: 10%;
+                    background: $main;
+                    padding: .7em 0;
+                    border: none;
+                    outline: none;
+                    border-radius: $small-radius;
+                    color: $white;
+                    font-family: $font;
+
+                    &:hover{
+                        background: $accent;
+                    }
+                }
+    
+                .content{
+                    position: relative;
+                    width: calc($wk-width * 0.4);
+                    display: flex;
+                    gap: 1em;
+    
+                    .item{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: $small-radius;
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+                        cursor: pointer;
+                        
+                        img{
+                            object-fit: cover;
+                            aspect-ratio: 1/1;
+                            border-radius: $small-radius;
+                            transition: .3s ease-in-out;
+    
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                        
+                        h3{
+                            width: 100%;
+                            height: 100%;
+                            background: rgba($black, 0.2);
+                            position: absolute;
+                            align-self: center;
+                            padding-top: 30%;
+                            text-align: center;
+                            visibility: hidden;
+                        }
+    
+                        &:hover.h3{
+                            visibility: visible;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .slideControl{
+        position: absolute;
+        width: 30%;
+        right: 5%;
+        bottom: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // gap: .5em;
+        z-index: 11;
+
+        .previous, .next{
+            position: relative;
+            padding: .5em;
+            outline: none;
+            border: none;
+            background: $main;
+            border-radius: $radius;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+
+            &:hover{
+                background: $accent;
+            }
         }
 
-        .agro{
-            background: radial-gradient(
-                circle,
-                rgba($brown, 0.2),
-                rgba($brown, 0.6)
-            );
+        .line{
+            height: 0.5em;
+            width: 3em;
+            background: rgba($white, 0.2);
+            border: 0.02em solid $sub;
+            border-radius: $small-radius;
+            cursor: pointer;
+
+            &.active{
+                background: $brown;
+            }
         }
     }
 }
