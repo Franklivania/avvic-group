@@ -8,6 +8,7 @@ import Scope from '../../Components/Scope/Scope'
 import SectionButton from '../../Components/SectionButton/SectionButton';
 import InfoPanel from '../../Components/InfoPanel/InfoPanel';
 import Offers from '../../Components/Offers/Offers';
+import Footer from '../../Components/Footer/Footer';
 
 const Landing = () => {
 
@@ -33,6 +34,8 @@ const Landing = () => {
         <InfoPanel />
 
         <Offers />
+
+        <Footer />
 
         <SectionButton
           onClick={scrollToTop}

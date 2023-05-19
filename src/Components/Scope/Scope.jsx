@@ -165,7 +165,7 @@ const Scope = ({ className }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 10000);
+    }, 20000);
 
     return () => clearInterval(timer);
   }, [slides.length]);

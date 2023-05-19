@@ -35,12 +35,15 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 1em;
             color: $white;
             text-align: center;
             padding: 0 1em;
+            overflow: hidden;
 
             h2{
                 font-family: $header-font;
+                line-height: 1em;
                 font-size: calc($large-text * 0.9);
             }
             p{
@@ -49,7 +52,7 @@
             }
         }
 
-        article ~ img:hover{
+        article:hover + img{
             transform: scale(1.2);
         }
     }

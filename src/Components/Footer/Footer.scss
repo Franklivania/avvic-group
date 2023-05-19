@@ -1,0 +1,78 @@
+@import '../../App.scss';
+
+footer{
+    position: relative;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 0;
+    background: $main;
+    color: $white;
+
+    .foot{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex: 1/1;
+
+        
+        h2{
+            font-family: $header-font;
+        }
+        
+        .menu, .subs{
+            display: flex;
+            flex-direction: column;
+            
+            .links{
+                margin: 0.2em 0;
+                font-family: $font;
+                text-decoration: none;
+                color: rgba($white, 0.7);
+                
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    
+        aside{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            
+            a{
+                color: $white;
+                font-family: $font;
+                
+            }
+
+            
+            .socials{
+                display: flex;
+                gap: 1em;
+                
+                a{
+                    color: $white;
+                    
+                    &:hover{
+                        color: $brown;
+                    }
+                }
+            }
+        }
+    }
+
+    .foots{
+        position: relative;
+        align-self: center;
+        letter-spacing: 0.1em;
+        
+        p{
+            font-family: $font;
+        }
+    }
+}

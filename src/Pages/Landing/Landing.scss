@@ -3,7 +3,8 @@
 .landing{
     position: relative;
     width: 100%;
-    height: $height;
+    // height: $height;
+    overflow: hidden;
 
     .arrow{
         position: fixed;
@@ -15,6 +16,7 @@
         display: grid;
         place-items: center;
         cursor: pointer;
+        border: 0.02em solid $white;
     }
 
 }
