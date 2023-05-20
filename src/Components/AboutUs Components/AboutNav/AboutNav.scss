@@ -1,5 +1,40 @@
 @import '../../../App.scss';
 
 #aboutNav{
-    
+    position: relative;
+    height: 100%;
+    width: 23%;
+    border-right: 0.2em solid rgba($accent, 0.3);
+
+    .list{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .items{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .link{
+            color: $main;
+            text-decoration: none;
+            margin: 1em;
+            font-family: $font;
+            font-size: $text;
+            letter-spacing: .1em;
+            padding: 1em;
+            border-radius: $small-radius;
+
+            &:hover{
+                background: rgba($sub, 0.5);
+            }
+        }
+
+        .active{
+            background: $sub;
+        }
+    }
 }

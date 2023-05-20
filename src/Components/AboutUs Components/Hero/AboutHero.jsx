@@ -6,7 +6,7 @@ import SectionButton from '../../SectionButton/SectionButton'
 
 const AboutHero = () => {
   return (
-    <div id='hero'>
+    <div id='heros'>
         <h1>ABOUT US</h1>
 
         <SectionButton 

@@ -1,0 +1,46 @@
+@import '../../../App.scss';
+
+#aboutMain{
+    position: relative;
+    width: $width;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: $font;
+
+    p{
+        position: absolute;
+        top: 13%;
+        left:5%;
+        z-index: 11;
+        background: $white;
+        padding: 1em;
+        width: 50%;
+        border-radius: $small-radius;
+        box-shadow: 0.02em 0.02em 0.2em rgba($black, 0.2),
+                    0.02em 0.02em 0.2em rgba($black, 0.2),
+                    0.02em 0.02em 0.2em rgba($black, 0.2),
+                    0.02em 0.02em 0.2em rgba($black, 0.2);
+    }
+
+    figure{
+        position: relative;
+        height: calc($wk-height * 0.2);
+        width: calc($wk-width * 0.3);
+        overflow: hidden;
+        border-radius: $small-radius;
+
+        img{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform .3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

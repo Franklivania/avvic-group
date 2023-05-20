@@ -1,5 +1,10 @@
 @import '../../../App.scss';
 
 #aboutScope{
-    
+    position: relative;
+    width: $width;
+    height: $height;
+    // padding: 2em;
+    display: flex;
+    justify-content: space-between;
 }
