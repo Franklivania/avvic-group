@@ -1,0 +1,36 @@
+@import '../../../App.scss';
+
+#hero{
+    position: relative;
+    width: $width;
+    height: $height;
+    background: radial-gradient(
+        circle,
+        rgba($black, 0.3),
+        rgba($black, 0.9)
+    ),
+    url(../../../assets/about.jpg) no-repeat center;
+    background-size: cover;
+    font-family: $font;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+    padding: 0 2em;
+
+    h1{
+        font-family: $header-font;
+        font-size: $large-text;
+        font-weight: 500;
+    }
+
+    .mouse{
+        position: absolute;
+        bottom: 3%;
+        align-self: center;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
