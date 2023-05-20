@@ -12,10 +12,13 @@ footer{
 
     .foot{
         position: relative;
+        padding: 0 2em;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         flex: 1/1;
+        gap: 1em;
+        width: 100%;
 
         
         h2{
@@ -42,6 +45,8 @@ footer{
             position: relative;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
+            flex: 1/1;
             gap: 1em;
             
             a{
@@ -63,12 +68,45 @@ footer{
                     }
                 }
             }
+
+            label{
+                position: relative;
+                width: $width;
+
+                input{
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    font-size: $text;
+                    padding: .5em;
+                    border-radius: $small-radius;
+                    font-family: $font;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: .3em .7em;
+                    background: $main;
+                    outline: none;
+                    border: none;
+                    border: 0.02em solid $white;
+                    border-top-right-radius: $small-radius;
+                    border-bottom-right-radius: $small-radius;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: $accent;
+                    }
+                }
+            }
         }
     }
 
     .foots{
         position: relative;
         align-self: center;
+        text-align: center;
         letter-spacing: 0.1em;
         
         p{

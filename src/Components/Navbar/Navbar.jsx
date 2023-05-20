@@ -1,15 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
-import 'animate.css'
+import 'animate.css/animate.min.css'
 import logo from '../../assets/avvic_logo.png'
 import Button from '../Button/Button'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
+    const menuRef = useRef(null)
+
+    useEffect(() => {
+        if (open) {
+          menuRef.current.classList.add('animate__fadeInRight');
+          menuRef.current.classList.remove('animate__fadeOutRight');
+        } else {
+          menuRef.current.classList.remove('animate__fadeInRight');
+          menuRef.current.classList.add('animate__fadeOutRight');
+                
+          const timeoutId = setTimeout(() => {
+            setOpen(false);
+          }, 500);
+      
+          return () => clearTimeout(timeoutId);
+        }
+    }, [open]);
+      
+      
+
     
     function handleToggle(){
-        setOpen(!open)
+        setOpen(prevOpen => !prevOpen);
     }
   return (
     <>
@@ -23,14 +43,14 @@ const Navbar = () => {
             />
         </nav>
 
-        <menu>
+        <menu ref={menuRef}>
             <Link to='/'><img src={logo} alt={"avvic-logo"} /></Link>
 
-            <button type='button' onClick={handleToggle}>
+            <button type='button' onClick={handleToggle} id='switch'>
                 <i className={`fa-solid fa-${!open ? 'bars' : 'times'} fa-3x`}></i>
             </button>
             { open &&
-                <div className='menu'>
+                <div className="menu animate__animated" ref={menuRef}>
                     <Navigation />
                     <Button 
                         title={"CONTACT US"}
@@ -67,7 +87,7 @@ function Navigation () {
                     </div>
                 )}
             </Navitems>
-            <Navitems link={`media`} title={"MEDIA"} onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(null)}>
+            <Navitems link={`#`} title={"MEDIA"} onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(null)}>
                 <i className='fa-solid fa-caret-down'></i>
                 {activeIndex === 2 && (
                     <div className='dropdown'>
