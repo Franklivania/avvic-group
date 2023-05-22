@@ -1,5 +1,50 @@
 @import '../../../App.scss';
 
 #culture{
-    
+    position: relative;
+    width: $width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    .container{
+        position: relative;
+        width: 30%;
+        height: calc($wk-height * 0.13);
+        padding: 1em;
+        border: 0.02em solid $sub;
+        border-radius: $small-radius;
+        font-family: $font;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: transform .3s ease-out;
+
+        &:hover{
+            box-shadow: 0.02em 0.02em 0.5em $sub,
+                        0.02em 0.02em 0.5em $sub,
+                        0.02em 0.02em 0.5em $sub,
+                        0.02em 0.02em 0.5em $sub;
+
+            transform: scale(1.02);
+        }
+
+        h2{
+            font-family: $header-font;
+            color: $main;
+        }
+
+        ul{
+            padding: 1em;
+            // list-style-image: url('../../../assets/avvic_icon.png');
+
+            li{
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size: 0.2em;
+            }
+        }
+    }
 }

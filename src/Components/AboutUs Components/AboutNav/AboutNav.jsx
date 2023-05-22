@@ -5,15 +5,18 @@ import { Link } from 'react-router-dom';
 
 const AboutNav = ({ className, activeSection, setActiveSection }) => {
   const [activeLink, setActiveLink] = useState(null);
+  const [activeSubLink, setActiveSubLink] = useState('bod');
   const [open, setOpen] = useState(false);
 
   function handleClick(link, section) {
     if (activeLink === link) {
       setActiveLink(null);
       setActiveSection(null);
+      setActiveSubLink('bod'); // Reset the active sublink to 'bod'
     } else {
       setActiveLink(link);
       setActiveSection(section);
+      setActiveSubLink('bod'); // Set the active sublink to 'bod' by default when clicking on a link
     }
   }
 
@@ -38,7 +41,7 @@ const AboutNav = ({ className, activeSection, setActiveSection }) => {
             link={''}
             title={'LEADERSHIP'}
             active={activeLink === 'leadership'}
-            onClick={() => handleClick('leadership', null)}
+            onClick={() => handleClick('leadership', 'leadership')}
           >
             <i className="fa-solid fa-caret-down"></i>
             {activeLink === 'leadership' && (
@@ -46,20 +49,20 @@ const AboutNav = ({ className, activeSection, setActiveSection }) => {
                 <NavSubLinks
                   link={''}
                   title={'BOARD OF DIRECTORS'}
-                  active={false}
-                  onClick={() => handleClick('bod', 'bod')}
+                  active={activeSubLink === 'bod'} // Check activeSubLink for active state
+                  onClick={() => setActiveSubLink('bod')} // Set activeSubLink to 'bod' when clicked
                 />
                 <NavSubLinks
                   link={''}
                   title={'HEAD OF PORTFOLIOS'}
-                  active={false}
-                  onClick={() => handleClick('hop', 'hop')}
+                  active={activeSubLink === 'hop'} // Check activeSubLink for active state
+                  onClick={() => setActiveSubLink('hop')} // Set activeSubLink to 'hop' when clicked
                 />
                 <NavSubLinks
                   link={''}
                   title={'MANAGEMENT TEAM'}
-                  active={false}
-                  onClick={() => handleClick('mt', 'mt')}
+                  active={activeSubLink === 'mt'} // Check activeSubLink for active state
+                  onClick={() => setActiveSubLink('mt')} // Set activeSubLink to 'mt' when clicked
                 />
               </div>
             )}
