@@ -3,7 +3,7 @@ import { Element, animateScroll as scroll } from 'react-scroll';
 import './Landing.scss'
 import arrow from '../../assets/up.png'
 import Navbar from '../../Components/Navbar/Navbar'
-import Hero from '../../Components/Hero/hero'
+import Hero from '../../Components/Hero/Hero'
 import Scope from '../../Components/Scope/Scope'
 import SectionButton from '../../Components/SectionButton/SectionButton';
 import InfoPanel from '../../Components/InfoPanel/InfoPanel';
