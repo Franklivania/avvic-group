@@ -1,0 +1,99 @@
+@import '../../../App.scss';
+
+#history{
+    position: relative;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1/1;
+    overflow-y: hidden;
+
+    #otigba{
+        position: relative;
+        width: 100%;
+        height: calc($wk-width * 0.15);
+        object-fit: cover;
+        border-radius: $small-radius;
+    }
+
+    p{
+        font-family: $font;
+        margin: 1em 0;
+    }
+
+    
+
+    span{
+        position: relative;
+        width: 100%;
+        align-self: center;
+        margin-top: 2em;
+        display: grid;
+        place-items: center;
+
+        #icon{
+            width: 3em;
+        }
+
+        p{
+            position: absolute;
+            top: -25%;
+            right: 0;
+            font-family: $font;
+        }
+
+        &::before,
+        &::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            height: 0.2em;
+            width: 45%;
+            background: $main;
+            z-index: 99;
+        }
+
+        &::before{
+            left: 0;
+        }
+
+        &::after{
+            right: 0;
+        }
+    }
+
+    #subs{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1/1;
+        // gap: .5em;
+
+        .container{
+            position: relative;
+            width: 45%;
+            justify-self: right;
+            margin: 1em 0;
+
+            h2{
+                font-family: $header-font;
+                color: $main;
+                letter-spacing: .1em;
+                display: flex;
+                align-items: center;
+                gap: .2em;
+
+                img{
+                    width: 5%;
+                }
+            }
+            p{
+                font-family: $font;
+            }
+        }
+    }
+
+}

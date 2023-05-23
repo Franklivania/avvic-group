@@ -65,11 +65,11 @@ nav, menu{
         padding: 1em;
         border-radius: $small-radius;
         cursor: pointer;
-        background: $main;
+        background: $accent;
         color: $white;
 
         &:hover{
-            background: $accent;
+            background: $main;
         }
     }
 }

@@ -1,0 +1,164 @@
+
+{
+    "bod": [
+        {
+            "id": 1,
+            "name": "O’BRIEN OFORDU",
+            "image": "/Profiles/ofordu.jpg",
+            "title": "Chairman, Board of Directors​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "O’Brien Ofordu is the Chairman, Board of Directors, Avvic Group. He brings to the Board over three decades of corporate management, public service and business leadership experience and capacity. \n O’Brien Ofordu has served as Managing Director at Enugu State Water Corporation, Field Operations and Marketing Coordinator at Manitoba Hydro International’s Revenue Cycle Management Program for Power Holding Company of Nigeria, Project Manager at Wardrop Nigeria Limited for DFID’s Revenue Management Project for Enugu State Water Corporation, Managing Director and Chief Executive Officer at Keralux Nigeria Limited, Consultant and Project Coordinator at Charnel Group of Companies, Director of Food Services at Manoir Dorval Quebec Canada, Supervisor at Griffith McConnell Residence Montreal, Quebec, Canada. He also served as the Senior Special Adviser to the Enugu State Government on Water Projects where he worked to develop the Roadmap to Public – Private Partnership in metering, pipeline replacement, pipeline extension, World Bank assisted reforms and enhancement of sustainable IGR. \n O’Brien Ofordu is an Alumnus of the prestigious Concordia University, Montreal, Quebec, Canada where he holds a B.Sc. in Political Science and holds a Diploma in Dietetics from Carlton University, Canada"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "UCHENNA CHUKWUEKE",
+            "image": "/Profiles/uchenna.jpg",
+            "title": "Group Managing Director/Chief Executive Officer​​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Uchenna Azubuike Chukwueke is the Group Managing Director and Chief Executive Officer. \n He holds a B.Sc in Sociology and an MBA in Business Administration. He has developed requisite proficiencies in Business Development, Strategic Business Management, Project Planning and Project Management. Prior to joining the Management Team at Avvic Group, he had worked with Zenith Bank Plc for over fifteen years in different business development capacities. He also worked with VFD Group, a finance and digital banking firm, as Regional Head South East. Uchenna Chukwueke brings his focused and result-oriented experience to the Board."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "OBIOMA AKPAGBULA",
+            "image": "/Profiles/obinna.jpg",
+            "title": "EXECUTIVE DIRECTOR, FST​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Obioma Akpagbula is the Group Executive Director, Finance and Strategy. He brings to the Group, core competencies in investment and portfolio management, risk management, banking operations, corporate financial management, financial analysis and business development. His experience in the financial sector spans over seventeen years during which he worked with Zenith Bank Plc in different capacities. Obioma Akpagbula holds a B.Sc. and M.Sc. in Economics. He is an Associate of the Chartered Institute of Stockbrokers Nigeria and the Chartered Institute for Securities and Investment United Kingdom."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "SAMUEL NDUBUISI OSEAFIANA",
+            "image": "/Profiles/sammy.jpg",
+            "title": "EXECUTIVE DIRECTOR, GRC​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Samuel Oseafiana is the Group Executive Director, Governance, Risk and Compliance. He has developed specific skills in business process, financial management and strategic sales dynamics in the banking industry. Samuel started his career with Zenith Bank Plc in 2009, rose through the ranks and necessary experiences to become the head of Enugu zonal cash management team. In 2019 he joined the Business Development team of Zenith bank plc. He joined AVVIC group in 2022 and was appointed the Managing Director of Avvic Connect Ltd. Samuel holds a degree in Accounting Education from the University of Benin, Benin City, a student member of Chartered institute of Bankers of Nigeria (CIBN) and a member of the Institute of Chartered Accountants of Nigeria (ICAN)."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "ODERA OGBODO",
+            "image": "/Profiles/odera.jpeg",
+            "title": "EXECUTIVE DIRECTOR, TRD​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Odera Ogbodo is the Group Executive Director, Technology, Research and Development. He brings to the Board, extensive competencies in IT, data analysis, tech analysis, electronic business development and management. He worked as a Data and Tech Analyst at the University of Greenwich, London. He also worked as an Electronic Business Analyst with Zenith Bank Plc. He was Lead, Enterprise and Application Support for VFD Tech Limited. Odera Ogbodo holds a B.Sc, First Class Honours, in Information and Communication Technology from the prestigious University of Greenwich, London."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "PROF. PASCHAL ILOEGBU PETER OKOLIE (JP)",
+            "image": "/Profiles/paschal.jpeg",
+            "title": "NON EXECUTIVE DIRECTOR​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "He is an astute financial management expert and consultant with over three decades of academic, professional, corporate, and public service experience. Prof. Okolie served as the Accountant-General, Enugu State and Permanent Secretary, Enugu State Ministry of Finance. His professional stewardship saw him serve as the Chairman, Forum of Accountants-General in Nigeria; Chairman, Association of National Accountants of Nigeria (ANAN), Enugu State Branch; Chairman, Enugu and District Society of Chartered Institute of Taxation of Nigeria (CITN); member of Technical and International Affairs Committee of ANAN; and member of Workshops and Conferences Committee of ANAN. Prof. Paschal Iloegbu Peter Okolie holds a PhD in Finance, MBA and M.Sc in Banking and Finance and B.Sc (Hons.) in Accountancy. He is a Fellow, Association of National Accountants of Nigeria (FCNA); Fellow, Chartered Institute of Taxation of Nigeria (FCTI); Fellow, Institute of Management Consultants (FIMC); Fellow, Association of Management and Social Sciences Researchers of Nigeria (FAMSSRN); Doctoral Fellow of the Institute of Professional Financial Managers of London (DFPFM, London); Member, Nigerian Institute of Management (NIM), Member, Sub-Committee on Government Ministries and Agencies of AMSSRN."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "HRH IGWE JOSEPH EMEKA OGBODO",
+            "image": "/Profiles/hrh.jpg",
+            "title": "NON EXECUTIVE DIRECTOR​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "HRH is a Non-Executive Director at Avvic Group. He is a proven administrator and business mogul. During his active business days, he was the Chairman /CEO of Small Joe Group; which engaged in various business chains including but not limited to Luxury Coach Transportation, Importation, Logistics/Truck-Haulage and Hospitality. He was also an Executive Director at the then Co-Operative and Commerce Bank (CCB), Board Member of the then Premier Breweries Plc as well as an Executive Director at the Enugu State Transport Company (ENTRACO). His business and philantropy were recognised with various business and lifetime service awards which includes a Justice of Peace (JP) by the Enugu State Govt. He is currently the Traditional Ruler of Amechi Uwani Awk., in Enugu South LGA of Enugu State."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "CHIJIOKE JUDE NNEJI",
+            "image": "/Profiles/kenneth.jpg",
+            "title": "NON EXECUTIVE DIRECTOR​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Chijioke Jude Nneji is a Non-Executive Director at Avvic Group. He comes to the Board with an extensive wealth of hands-on experience that spans over two decades in finance, industry, commerce, business development and management. Chijioke Jude Nneji is a consummate industrialist, business magnate and seasoned investor. He is the founding chairman of Cinnamon Group, Cinnamon Drugs Limited, Cinnamon Quarries Limited, Cinnamon Engineering Limited, Cinnamon Forte Limited, High Technology World Limited, and Trans Log VIP Leasing Company Limited. He has leveraged his business and management skills to steer these companies from inception into highly successful and profitable business ventures of repute. He is vigorously engaged in community development, philanthropy, and youth mentorship programs. As president of UgoChiyelu Foundation, he oversees welfare projects that cater for children, widows, indigent, and elderly people. He also presides over Ugochiyelu Sports Academy which provides a platform for active youth engagement in sports, talent management and overall sports development. He directs a mentorship program for young business people and inspiring industrialists. Chijioke Jude Nneji is the recipient of several awards in recognition of his business accomplishments and services in community development."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "UDOKA MICHAEL MADUKA",
+            "image": "/Profiles/maduka.jpeg",
+            "title": "NON EXECUTIVE DIRECTOR",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Udoka Michael Maduka is a Non-Executive Director at Avvic Group. He brings on board, experience spanning over twenty eight years in law, finance, construction, real estate, project management and business development. Udoka was a Legal Officer at Fung Tai Engineering Company Limited. He worked with Bank of America Financial Corporation, Fairfax Virginia, USA and Field Stone Mortgage, Columbia, Maryland, USA as a Loan Review and Loan Post Closing Officer. He was a Licensed Realtor in the State of Maryland and Washington DC, USA and worked with Associates of Ekuban Realty Services, Takoma Park, Maryland USA. He was the Project Coordinator, Dredging of the Lower River Niger (LOT 1) Patani, Delta State with Fung Tai Engineering Company Limited (FTECL). Udoka Maduka holds an LLB, BL in Law. He also holds an MBA from Southeastern University, Washington DC, USA. He acquired an MSCP/CCNA from Nationwide Computer, Silver Spring, Maryland, USA, a Salesman License from Weichert Real Estate School, Greenbelt Maryland, USA."
+                }
+            ]
+        }
+    ],
+
+    "hop": [
+        {
+            "id": 1,
+            "name": "UCHENNA CHUKWUEKE",
+            "image": "/Profiles/uchenna.jpg",
+            "title": "Group Managing Director/Chief Executive Officer​​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Uchenna Azubuike Chukwueke is the Group Managing Director and Chief Executive Officer. \n He holds a B.Sc in Sociology and an MBA in Business Administration. He has developed requisite proficiencies in Business Development, Strategic Business Management, Project Planning and Project Management. Prior to joining the Management Team at Avvic Group, he had worked with Zenith Bank Plc for over fifteen years in different business development capacities. He also worked with VFD Group, a finance and digital banking firm, as Regional Head South East. Uchenna Chukwueke brings his focused and result-oriented experience to the Board."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "OBIOMA AKPAGBULA",
+            "image": "/Profiles/obinna.jpg",
+            "title": "EXECUTIVE DIRECTOR, FST​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Obioma Akpagbula is the Group Executive Director, Finance and Strategy. He brings to the Group, core competencies in investment and portfolio management, risk management, banking operations, corporate financial management, financial analysis and business development. His experience in the financial sector spans over seventeen years during which he worked with Zenith Bank Plc in different capacities. Obioma Akpagbula holds a B.Sc. and M.Sc. in Economics. He is an Associate of the Chartered Institute of Stockbrokers Nigeria and the Chartered Institute for Securities and Investment United Kingdom."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "SAMUEL NDUBUISI OSEAFIANA",
+            "image": "/Profiles/sammy.jpg",
+            "title": "EXECUTIVE DIRECTOR, GRC​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Samuel Oseafiana is the Group Executive Director, Governance, Risk and Compliance. He has developed specific skills in business process, financial management and strategic sales dynamics in the banking industry. Samuel started his career with Zenith Bank Plc in 2009, rose through the ranks and necessary experiences to become the head of Enugu zonal cash management team. In 2019 he joined the Business Development team of Zenith bank plc. He joined AVVIC group in 2022 and was appointed the Managing Director of Avvic Connect Ltd. Samuel holds a degree in Accounting Education from the University of Benin, Benin City, a student member of Chartered institute of Bankers of Nigeria (CIBN) and a member of the Institute of Chartered Accountants of Nigeria (ICAN)."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "ODERA OGBODO",
+            "image": "/Profiles/odera.jpeg",
+            "title": "EXECUTIVE DIRECTOR, TRD​",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Odera Ogbodo is the Group Executive Director, Technology, Research and Development. He brings to the Board, extensive competencies in IT, data analysis, tech analysis, electronic business development and management. He worked as a Data and Tech Analyst at the University of Greenwich, London. He also worked as an Electronic Business Analyst with Zenith Bank Plc. He was Lead, Enterprise and Application Support for VFD Tech Limited. Odera Ogbodo holds a B.Sc, First Class Honours, in Information and Communication Technology from the prestigious University of Greenwich, London."
+                }
+            ]
+        }
+    ]
+}

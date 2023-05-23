@@ -1,0 +1,35 @@
+@import '../../../App.scss';
+
+#leadership{
+    position: relative;
+    width: 100%;
+    font-family: $font;
+
+    .buttons{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: $width;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1em 0;
+        z-index: 11;
+        // background: $white;
+
+        .toggle{
+            background: rgba($accent, 0.5);
+            color: $white;
+            cursor: pointer;
+
+            &:hover{
+                background: rgba($accent, 0.8);
+            }
+
+            &.active{
+                background: $accent;
+            }
+        }
+
+    }
+}

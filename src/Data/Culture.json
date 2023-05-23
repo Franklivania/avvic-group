@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "title": "Our Vision",
+        "text": "To become Africa’s leading, technology driven, multi-service solution provider.",
+        "listitems": []
+    },
+    {
+        "id": 2,
+        "title": "Our Mission",
+        "text": "To provide cutting-edge, innovative products and services.",
+        "listitems": []
+    },
+    {
+        "id": 1,
+        "title": "Our Goal",
+        "text": "To become the industry leader in every sector of participation.",
+        "listitems": []
+    },
+    {
+        "id": 1,
+        "title": "Strategic Focus",
+        "text": "Value creation and maximization through innovative product and service delivery.",
+        "listitems": []
+    },
+    {
+        "id": 1,
+        "title": "Our Vision",
+        "text": "",
+        "listitems": [
+            {
+                "id": 1,
+                "list": "Integrity"
+            },
+            {
+                "id": 2,
+                "list": "Client Satisfaction"
+            },
+            {
+                "id": 3,
+                "list": "People Development"
+            },
+            {
+                "id": 1,
+                "list": "Technology Driven Innovation"
+            }
+        ]
+    }
+]

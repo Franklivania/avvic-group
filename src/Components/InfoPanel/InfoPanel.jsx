@@ -8,7 +8,7 @@ const InfoPanel = ({className}) => {
             Leveraging Technology In Value Creation
         </h1>
         <p>
-            Avvic Group leads subsidiaries and provides collaborative synergies that drive value creation through innovative products, service delivery and solutions for the African market.
+            Avvic Group leads subsidiaries and provides collaborative synergies that drive value creation through innovative products, <br /> service delivery and solutions for the African market.
         </p>
     </div>
   )
