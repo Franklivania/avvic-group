@@ -41,11 +41,11 @@
             outline: none;
             border: none;
             border-radius: $small-radius;
-            background: $main;
+            background: $accent;
             cursor: pointer;
 
             &:hover{
-                background: $accent;
+                background: $main;
             }
         }
 

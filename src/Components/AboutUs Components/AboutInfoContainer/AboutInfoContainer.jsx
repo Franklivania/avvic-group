@@ -5,13 +5,15 @@ import History from '../History/History';
 import Culture from '../Culture/Culture';
 import Leadership from '../Leadership/Leadership';
 
-const AboutInfoContainer = ({ activeSection }) => {
+const AboutInfoContainer = ({ activeSection, activeSubLink }) => {
   return (
     <div id="aboutInfoContainer">
       {activeSection === null && <AboutMain />}
       {activeSection === 'history' && <History />}
       {activeSection === 'culture' && <Culture />}
-      {activeSection === 'leadership' && <Leadership />}
+      {activeSection === 'leadership' && (
+        <Leadership activeSubLink={activeSubLink} />
+      )}
     </div>
   );
 };

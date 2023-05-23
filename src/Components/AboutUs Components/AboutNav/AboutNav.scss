@@ -27,6 +27,7 @@
             letter-spacing: .1em;
             padding: 1em;
             border-radius: $small-radius;
+            transition: transform .3s ease-out;
 
             &:hover{
                 background: rgba($sub, 0.5);

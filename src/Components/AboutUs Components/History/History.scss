@@ -67,12 +67,14 @@
         position: relative;
         width: 100%;
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         flex: 1/1;
+        // gap: .5em;
 
         .container{
             position: relative;
-            width: 50%;
+            width: 45%;
             justify-self: right;
             margin: 1em 0;
 

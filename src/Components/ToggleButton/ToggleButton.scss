@@ -1,0 +1,13 @@
+@import '../../App.scss';
+
+#togglebutton{
+    position: relative;
+    width: 30%;
+    padding: .7em;
+    font-family: $font;
+    font-weight: 400;
+    font-size: $text;
+    border-radius: $small-radius;
+    border: none;
+    outline: none;
+}
