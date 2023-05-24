@@ -18,5 +18,15 @@
         transform: scale(1.2);
       }
     }
+
+    .pop{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: .5em;
+        background: rgba($black, 0.5);
+        color: $white;
+    }
   }
   

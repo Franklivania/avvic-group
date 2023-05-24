@@ -160,5 +160,56 @@
                 }
             ]
         }
+    ],
+
+    "mt": [
+        {
+            "id": 1,
+            "name": "CHIDINMA OKORIE",
+            "image": "/Profiles/chidimma.jpg",
+            "title": "HEAD OF OPERATIONS",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Chidinma Okorie is the Head of Operations at Avvic Group.\n She holds a B.Sc in Accounting from Michael Okpara University and has variously worked with Guaranty Trust Bank and Intercontinental Bank.\n Chidinma Okorie’s work and professional experience traverses Financial Database Management, Financial System Management, Operations Process Management and Customer Experience Management. \n Chidinma brings to the Avvic Group team, a distinctive set of proficiencies which include IT skills, customer communication expertise and service quality management."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "KENNETH CHUKWUNWEIZE CHUKWUEDO",
+            "image": "/Profiles/ken.jpeg",
+            "title": "HEAD, STRATEGY AND BUSINESS DEVELOPMENT",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Kenneth Chukwuedo is the Head of Sales and Business Development at Avvic Group.\nHe holds a B.Sc in Psychology. Before joining Avvic, he had worked extensively as a Business Development Executive with First City Monument Bank for over a decade.Over the period, he has garnered working capacity in business development, risk asset and customer relationship management.\n Kenneth Chukwunweize Chukwuedo brings to the team his unique business relationship and corporate management competencies."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "REV. SR. CHINEM EZENWATA",
+            "image": "/Profiles/sr.jpeg",
+            "title": "LEAD, AUDIT, CONTROL & COMPLIANCE",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Rev. Sr. Chinem is the head of Internal Control at Avvic Group.\nShe holds an HND in Accountancy from Federal Polytechnic Oko and has worked in Umuchinemere Pro- Credit Microfinance Bank with over a decade of experience. She is also a member of the Chartered Institute of Bankers of Nigeria and Institute of Chartered Accountants of Nigeria. . Prior to joining the team, she was the Senior Manager and Head Internal Audit/Chief Compliance Officer at Umuchinemere Pro-Credit Microfinance Bank.\nSr. Chinem’s work experience traverses assessing and reporting on the effectiveness of governance, risk management, and quality control processes strategically designed to aid the organisation achieve its goals and objectives.\nShe brings to the Avvic Team core competencies in critical thinking abilities in reducing internal costs and waste, reviewing, analyzing, and assessing trial balances and assets; and efficiency in managing organizational cash flow, budgets, and forecasting."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "OLUCHI NDUBISI",
+            "image": "/Profiles/oluchi.jpeg",
+            "title": "HEAD, HUMAN RESOURCES",
+            "content" : [
+                {
+                    "id": 1,
+                    "about": "Oluchi Ndubisi is a Human Capital Development professional whose experience in the financial services sector spans Human Resource Management, Learning Management, Customer Service and Customer Experience Management. \nPrior to joining Avvic Group as Head, Human Resources, she worked at Zenith Bank in Customer Service and Banking Operations roles. \nOluchi holds a Bachelor’s degree (B.A) in Archaeology and Tourism from the University of Nigeria, Nsukka (UNN), the Diplome d’Etudes en Langue Francaise (DELF) certifications in B1 and B2, and possesses core competencies in corporate communication, customer experience management and human resource management."
+                }
+            ]
+        }
     ]
 }

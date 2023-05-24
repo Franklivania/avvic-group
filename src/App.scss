@@ -30,5 +30,11 @@ $large-text: 3em;
 $extra-large-text: 4em;
 
 ::-webkit-scrollbar{
-    width: 0;
+    width: .3em;
+}
+
+::-webkit-scrollbar-thumb{
+    padding: .1em;
+    background: $main;
+    border-radius: $small-radius;
 }
