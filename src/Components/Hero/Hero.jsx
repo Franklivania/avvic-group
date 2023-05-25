@@ -17,7 +17,7 @@ const Hero = ({className}) => {
         <section>
           <Fade delay={0.5} direction='up' damping={0.2}>
             <h1>
-              Proviving Technological, Financial, and Business
+              Providing Technological, Financial, and Business
               solutions for value chains
             </h1>
             <Button 

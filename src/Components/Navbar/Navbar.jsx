@@ -16,12 +16,6 @@ const Navbar = () => {
         } else {
           menuRef.current.classList.remove('animate__fadeInRight');
           menuRef.current.classList.add('animate__fadeOutRight');
-                
-          const timeoutId = setTimeout(() => {
-            setOpen(false);
-          }, 500);
-      
-          return () => clearTimeout(timeoutId);
         }
     }, [open]);
       
@@ -75,7 +69,7 @@ function Navigation () {
         <>
             <Navitems link={`/`} title={"HOME"}/>
             <Navitems link={`/about`} title={"ABOUT US"}/>
-            <Navitems link={'#'} title={"SUBSIDAIRIES"} onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
+            <Navitems link={'#'} title={"SUBSIDIARIES"} onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
                 <i className='fa-solid fa-caret-down'></i>
                 {activeIndex === 1 && (
                     <div className='dropdown'>

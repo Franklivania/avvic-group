@@ -1,0 +1,99 @@
+@import '../../App.scss';
+
+#contact{
+    position: relative;
+    width: $width;
+
+    #contact-hero{
+        position: relative;
+        width: 100%;
+        height: $height;
+        width: $width;
+        background: radial-gradient(
+            circle,
+            rgba($black, 0.6),
+            rgba($black, 0.7)
+        ),
+        url('../../assets/analytics.jpg') no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+        font-family: $header-font;
+        padding: 0 1em;
+
+        h1{
+            font-size: $large-text;
+            font-weight: 400;
+        }
+
+        .mouse{
+            position: absolute;
+            bottom: 3%;
+            align-self: center;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    #contact-container{
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
+
+        span{
+            position: relative;
+            width: 100%;
+            align-self: center;
+            display: grid;
+            place-items: center;
+            margin: .5em 0;
+
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                width: 45%;
+                padding: .13em;
+                background: $main;
+            }
+
+            &::before{
+                left: 0;
+            }
+            &::after{
+                right: 0;
+            }
+
+            img{
+                width: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 551px) {
+    #contact{
+        position: relative;
+
+        #contact-container{
+            
+            span{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    #contact{
+        position: relative;
+
+        #contact-container{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}

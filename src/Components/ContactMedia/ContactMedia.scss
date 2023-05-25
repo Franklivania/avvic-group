@@ -1,0 +1,30 @@
+@import '../../App.scss';
+
+#media{
+    position: relative;
+    width: $width;
+    font-family: $font;
+    font-size: $text;
+    padding: 1em;
+
+    #otigba{
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
+    }
+
+    .socials{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+
+        a{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            text-decoration: none;
+            color: $main;
+        }
+    }
+}
