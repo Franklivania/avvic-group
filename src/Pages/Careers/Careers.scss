@@ -1,0 +1,45 @@
+@import '../../App.scss';
+
+#careers{
+    position: relative;
+    width: $width;
+    
+
+    #career-hero{
+        position: relative;
+        width: $width;
+        height: $height;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: radial-gradient(
+            circle,
+            rgba($black , 0.6),
+            rgba($black , 0.7)
+        ),
+        url('../../assets/business.jpg') center no-repeat;
+        background-size: cover;
+
+        h1{
+            color: $white;
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: $large-text;
+        }
+
+        .mouse{
+            position: absolute;
+            bottom: 3%;
+            align-self: center;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    #career-container{
+
+    }
+
+}

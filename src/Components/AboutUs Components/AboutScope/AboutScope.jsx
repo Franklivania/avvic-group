@@ -8,7 +8,7 @@ const AboutScope = () => {
     const [activeSection, setActiveSection] = useState(null);
   return (
     <div id='aboutScope'>
-        <AboutNav activeSection={activeSection} setActiveSection={setActiveSection} />
+      <AboutNav activeSection={activeSection} setActiveSection={setActiveSection} />
       <AboutInfoContainer activeSection={activeSection} />
     </div>
   )

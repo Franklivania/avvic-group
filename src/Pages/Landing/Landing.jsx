@@ -9,6 +9,7 @@ import SectionButton from '../../Components/SectionButton/SectionButton';
 import InfoPanel from '../../Components/InfoPanel/InfoPanel';
 import Offers from '../../Components/Offers/Offers';
 import Footer from '../../Components/Footer/Footer';
+import Acheivement from '../../Components/Acheivement/Acheivement';
 
 const Landing = () => {
 
@@ -27,13 +28,13 @@ const Landing = () => {
           <Hero className={'section'}/>
         </Element>
 
-        <Element name='scope'>
-          <Scope className={'section'}/>
-        </Element>
+          {/* <Scope className={'section'}/> */}
 
         <InfoPanel />
 
-        <Offers />
+        <Acheivement />
+
+        {/* <Offers /> */}
 
         <Footer />
 

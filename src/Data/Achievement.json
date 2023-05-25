@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "MANAGEMENT",
+        "icon": "fa-solid fa-suitcase fa-2x",
+        "text": "AVVIC offers a robust portfolio of business management services to assist business owners and leaders manage vital business processes in a result-driven and cost-effective manner."
+    },
+    {
+        "id": 2,
+        "title": "FINANCE",
+        "icon": "fa-solid fa-layer-group fa-2x",
+        "text": "We deploy the collective experience of our experts to provide creative financial solutions engineered to navigate your business through the headwinds of the 21st Century marketplace profitably."
+    },
+    {
+        "id": 3,
+        "title": "BUSINESS ANALYTICS",
+        "icon": "fa-solid fa-chart-line fa-2x",
+        "text": "We build relevant analytics, ground up, to help businesses build critical data and processes for marketplace dominance."
+    },
+    {
+        "id": 4,
+        "title": "STRATEGIC FOCUS",
+        "icon": "fa-solid fa-bullseye fa-2x",
+        "text": "Value creation and maximization through innovative product and service delivery."
+    }
+]

@@ -15,9 +15,9 @@ const AboutMain = () => {
                 provides collaborative synergies that drive value creation through 
                 innovative products and service delivery.
             </p>
-            <figure>
+            {/* <figure>
                 <img src={profile} alt="" />
-            </figure>
+            </figure> */}
         </div>
     </div>
   )

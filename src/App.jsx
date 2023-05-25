@@ -4,6 +4,7 @@ import './App.scss'
 import Landing from './Pages/Landing/Landing'
 import AboutUs from './Pages/AboutUs/AboutUs'
 import ContactUs from './Pages/ContactUs/ContactUs'
+import Careers from './Pages/Careers/Careers'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path='' element={<Landing />}/>
           <Route path='/about' element={<AboutUs />}/>
           <Route path='/contact' element={<ContactUs />}/>
+          <Route path='/careers' element={<Careers />}/>
         </Routes>
       </Router>
     </div>
