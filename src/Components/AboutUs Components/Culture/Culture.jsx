@@ -10,7 +10,7 @@ const Culture = () => {
           <h2>{cultures.title}</h2>
           <p>{cultures.text}</p>
 
-          <ul content='un-editable'>
+          <ul>
             {cultures.listitems.map((items, idx) => (
               <li key={idx}>{items.list}</li>
             ))}

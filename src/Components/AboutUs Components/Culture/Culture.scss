@@ -48,3 +48,16 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    #culture{
+        position: relative;
+
+        .container{
+            position: relative;
+            width: $width;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

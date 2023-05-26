@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Quotes.scss';
+import 'animate.css'
 
 const Quotes = ({className}) => {
   const [quote, setQuote] = useState({ text: '', author: '' });
@@ -20,7 +21,7 @@ const Quotes = ({className}) => {
   return (
     <div id="quote" className={className}>
 
-        <blockquote>
+        <blockquote className='animate__animated animate__sildeInRight'>
             <q>{quote.text}</q>
             <br />
             <cite>- {quote.author}</cite>

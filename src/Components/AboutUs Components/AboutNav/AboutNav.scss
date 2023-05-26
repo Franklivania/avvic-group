@@ -43,3 +43,14 @@
         }
     }
 }
+
+@media screen and (max-width: 900px) {
+    #aboutNav{
+        position: relative;
+
+        .list{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

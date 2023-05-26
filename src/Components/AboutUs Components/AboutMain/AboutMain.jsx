@@ -7,7 +7,9 @@ import Quotes from '../../Quotes/Quotes'
 const AboutMain = () => {
   return (
     <div id='aboutMain'>
-        {/* </div> */}
+        {/*<div className="container"> 
+          </div> */}
+
             <p>
                 Avvic Group is a Multi-Service Holding Company. 
                 The Group, through its subsidiaries, provides a wide 
@@ -21,7 +23,7 @@ const AboutMain = () => {
                 <img src={profile} alt="" />
             </figure> */}
 
-        <Quotes className={"quote animate__animated animate__sildeInRight"}/>
+        <Quotes className={"quote"}/>
     </div>
   )
 }
