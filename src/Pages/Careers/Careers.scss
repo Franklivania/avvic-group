@@ -3,7 +3,8 @@
 #careers{
     position: relative;
     width: $width;
-    
+    display: flex;
+    flex-direction: column;
 
     #career-hero{
         position: relative;
@@ -39,7 +40,126 @@
     }
 
     #career-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        gap: 1em;
+        font-family: $font;
 
+        .top{
+            display: flex;
+            justify-content: space-around;
+
+            aside{
+                padding: 1em;
+
+                h1{
+                    color: $main;
+                }
+
+                ul{
+                    position: relative;
+
+                    li{
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        margin: .3em 0;
+
+                        &::before{
+                            content: "";
+                            display: inline-block;
+                            background: url('../../assets/avvic_icon.png') no-repeat center;
+                            background-size: contain;
+                            height: 1em;
+                            width: 1em;
+                        }
+                    }
+                }
+            }
+
+            img{
+                object-fit: cover;
+                width: 40%;
+                border-radius: $small-radius;
+            }
+        }
+
+        .bottom{
+            position: relative;
+            width: $width;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1em 0;
+
+            h1{
+                color: $main;
+            }
+
+            article{
+                align-self: center;
+                text-align: center;
+            }
+
+            aside{
+                display: flex;
+                gap: 2em;
+                padding: 3em;
+
+                img{
+                    object-fit: cover;
+                    width: 40%;
+                    border-radius: $small-radius;
+                }
+            }
+        }
     }
 
+    #career-foots{
+        position: relative;
+        width: 90%;
+        margin: 2em 0;
+        padding: 1em;
+        background: rgba($black , 0.3);
+        border-radius: $small-radius;
+        font-family: $font;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #careers{
+
+        #career-container{
+
+            .top, .bottom{
+                flex-wrap: wrap;
+
+                img{
+                    width: 100%;
+                }
+                aside{                    
+                    width: 100%;
+                    flex-wrap: wrap;
+                    padding: 0;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .top{
+                flex-direction: column-reverse;
+            }
+        }
+    }
 }
