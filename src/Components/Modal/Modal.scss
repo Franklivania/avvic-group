@@ -15,6 +15,7 @@
         position: relative;
         height: calc($wk-height * 0.3);
         width: calc($wk-width * 0.5);
+        place-self: center;
         padding: 1em;
         z-index: 31;
         background: $white;

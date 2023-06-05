@@ -1,11 +1,15 @@
 import React from 'react'
 import './AboutMain.scss'
-import profile from '../../../assets/abouthero1.jpg'
+import 'animate.css'
+// import profile from '../../../assets/abouthero1.jpg'
+import Quotes from '../../Quotes/Quotes'
 
 const AboutMain = () => {
   return (
     <div id='aboutMain'>
-        <div className='container'>
+        {/*<div className="container"> 
+          </div> */}
+
             <p>
                 Avvic Group is a Multi-Service Holding Company. 
                 The Group, through its subsidiaries, provides a wide 
@@ -15,10 +19,11 @@ const AboutMain = () => {
                 provides collaborative synergies that drive value creation through 
                 innovative products and service delivery.
             </p>
-            <figure>
+            {/* <figure>
                 <img src={profile} alt="" />
-            </figure>
-        </div>
+            </figure> */}
+
+        <Quotes className={"quote"}/>
     </div>
   )
 }

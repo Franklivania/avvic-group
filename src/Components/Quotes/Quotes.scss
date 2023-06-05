@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+#quotes{
+    position: relative;
+    font-family: $font;
+    // margin: 1em;
+    font-size: $text;
+
+    blockquote{
+        position: relative;
+        border-top: 0.1em solid $main;
+        padding: 1em;
+    }
+}

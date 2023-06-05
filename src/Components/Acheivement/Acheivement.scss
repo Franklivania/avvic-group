@@ -1,0 +1,69 @@
+@import '../../App.scss';
+
+#acheivement{
+    position: relative;
+    width: $width;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 2em;
+
+    #left{
+        position: relative;
+        font-family: $font;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        padding: 0 1em;
+        border-right: 0.02em solid $main;
+        text-align: center;
+        font-family: $font;
+        gap: 2em;
+
+        h2{
+            color: $main;
+        }
+
+        span{
+            position: relative;
+
+            i{
+                background: $accent;
+                padding: .5em;
+                color: $white;
+                border-radius: $radius;
+                transition: transform .3 ease-out;
+
+                &:hover{
+                    color: $main;
+                }
+            }
+        }
+    }
+
+    #right{
+        position: relative;
+        width: 60%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2em;
+
+        #content{
+            position: relative;
+            font-family: $font;
+            width: 100%;
+
+            i{
+                color: $main;
+            }
+
+            h2{
+                display: flex;
+                color: $main;
+            }
+        }
+    }
+}

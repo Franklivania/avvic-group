@@ -6,8 +6,9 @@ nav, menu{
     width: $width;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    // background: $white;
+    justify-content: space-between;
+    padding: .3em;
+    background: $white;
     z-index: 99;
 
     img{

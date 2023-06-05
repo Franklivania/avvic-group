@@ -75,7 +75,6 @@
         .container{
             position: relative;
             width: 45%;
-            justify-self: right;
             margin: 1em 0;
 
             h2{
@@ -87,7 +86,7 @@
                 gap: .2em;
 
                 img{
-                    width: 5%;
+                    width: 1em;
                 }
             }
             p{
@@ -96,4 +95,26 @@
         }
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    #history{
+        position: relative;
+
+        #subs{
+            position: relative;
+            width: $width;
+            display: flex;
+            flex-direction: column;
+
+            .container{
+                position: relative;
+                width: 100%;
+
+                h2{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

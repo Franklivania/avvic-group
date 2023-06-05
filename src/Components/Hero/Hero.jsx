@@ -29,7 +29,7 @@ const Hero = ({className}) => {
           <SectionButton 
             className={'mouse animate__animated animate__bounce animate__infinite animate__slow'} 
             image={mouse} 
-            to={'scope'}
+            to={'acheivement'}
           />        
         </section>
     </div>

@@ -3,9 +3,9 @@
 #aboutScope{
     position: relative;
     width: $width;
-    height: $height;
+    // height: $height;
     // padding: 2em;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    
 }

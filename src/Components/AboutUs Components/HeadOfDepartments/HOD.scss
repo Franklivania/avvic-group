@@ -14,8 +14,12 @@
     .hop-container{
         position: relative;
         width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto;
+        // display: grid;
+        // grid-template-columns: auto auto auto;
+        // place-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1em;
         border-radius: $small-radius;
     }
