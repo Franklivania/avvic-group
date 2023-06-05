@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import 'animate.css/animate.min.css'
@@ -7,19 +7,6 @@ import Button from '../Button/Button'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
-    const menuRef = useRef(null)
-
-    useEffect(() => {
-        if (open) {
-          menuRef.current.classList.add('animate__fadeInRight');
-          menuRef.current.classList.remove('animate__fadeOutRight');
-        } else {
-          menuRef.current.classList.remove('animate__fadeInRight');
-          menuRef.current.classList.add('animate__fadeOutRight');
-        }
-    }, [open]);
-      
-      
 
     
     function handleToggle(){
@@ -37,14 +24,14 @@ const Navbar = () => {
             />
         </nav>
 
-        <menu ref={menuRef}>
+        <menu>
             <Link to='/'><img src={logo} alt={"avvic-logo"} /></Link>
 
             <button type='button' onClick={handleToggle} id='switch'>
-                <i className={`fa-solid fa-${!open ? 'bars' : 'times'} fa-3x`}></i>
+                <i className={`fa-solid fa-${open ? 'times' : 'bars'} fa-3x`}></i>
             </button>
             { open &&
-                <div className="menu animate__animated" ref={menuRef}>
+                <div className={`menu animate__animated ${open ? 'active' : ''}`}>
                     <Navigation />
                     <Button 
                         title={"CONTACT US"}
@@ -75,8 +62,8 @@ function Navigation () {
                     <div className='dropdown'>
                         <NavContent link={`/consult`} title={"CONSULT"}/>
                         <NavContent link={`/connect`} title={"CONNECT"}/>
-                        <NavContent link={`/homes`} title={"HOMES"}/>
-                        <NavContent link={`/agro`} title={"AGRO"}/>
+                        {/* <NavContent link={`/homes`} title={"HOMES"}/> */}
+                        {/* <NavContent link={`/agro`} title={"AGRO"}/> */}
                         <NavContent link={`/tech`} title={"TECH"}/>
                     </div>
                 )}

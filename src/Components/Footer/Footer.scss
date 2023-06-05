@@ -5,28 +5,45 @@ footer{
     width: $width;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     padding: 2em 0;
-    background: $main;
+    background: $avvicblue;
     color: $white;
+    font-family: $font;
+    font-size: $text;
+
+    #foot-logo{
+        position: relative;
+        width: calc($wk-width * 0.15);
+        
+        img{
+            padding-left: 2em;
+            width: 100%;    
+        }
+    }
 
     .foot{
         position: relative;
         padding: 0 2em;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         flex: 1/1;
         gap: 1em;
         width: 100%;
+        font-family: $font;
+        font-size: $text;
 
         
         h2{
             font-family: $header-font;
+            font-weight: 400;
         }
         
         .menu, .subs{
+            position: relative;
             display: flex;
+            // width: 20%;
             flex-direction: column;
             
             .links{
@@ -45,8 +62,8 @@ footer{
             position: relative;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             flex-wrap: wrap;
-            flex: 1/1;
             gap: 1em;
             
             a{
@@ -68,10 +85,19 @@ footer{
                     }
                 }
             }
+            
+
+            #sub{
+                text-decoration: underline;
+                margin-top: .3em;
+            }
 
             label{
                 position: relative;
-                width: $width;
+                width: calc($wk-width * 0.3);
+                display: flex;
+                // flex-direction: column;
+                gap: 1em;
 
                 input{
                     width: 100%;
@@ -83,16 +109,14 @@ footer{
                     font-family: $font;
                 }
                 button{
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: .44em .7em;
-                    background: $main;
+                    position: relative;
+                    padding: .44em 2em;
+                    background: $avvicblue;
+                    color: $white;
                     outline: none;
                     border: none;
                     border: 0.02em solid $white;
-                    border-top-right-radius: $small-radius;
-                    border-bottom-right-radius: $small-radius;
+                    border-radius: $small-radius;
                     cursor: pointer;
 
                     &:hover{
@@ -105,12 +129,60 @@ footer{
 
     .foots{
         position: relative;
-        align-self: center;
-        text-align: center;
-        letter-spacing: 0.1em;
+        border-top: 0.01em solid $white;
+        margin: 1em;
+        padding: 1em 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         
         p{
             font-family: $font;
+        }
+
+        #privacy{
+            display: flex;
+            gap: 2em;
+
+            .links{
+                color: $white;
+                // text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    footer{
+        position: relative;
+        width: $width;
+
+        .foot{
+            position: relative;
+            width: 100%;
+            flex-wrap: wrap;
+
+            aside{
+                position: relative;
+                width: 100%;
+                // flex-wrap: wrap;
+                
+                label{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+                    input, button{
+                        width: 100%;
+                        font-size: $text;
+                    }
+                }
+            }
+        }
+
+        .foots{
+            flex-direction: column;
+            gap: 1em;
         }
     }
 }

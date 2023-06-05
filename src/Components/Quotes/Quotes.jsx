@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Quotes.scss';
 import 'animate.css'
+import career2 from '../../assets/career2.jpg'
 
 const Quotes = ({className}) => {
   const [quote, setQuote] = useState({ text: '', author: '' });
@@ -20,6 +21,10 @@ const Quotes = ({className}) => {
 
   return (
     <div id="quote" className={className}>
+
+        <figure>
+            <img src={career2} alt="" />
+        </figure>
 
         <blockquote className='animate__animated animate__sildeInRight'>
             <q>{quote.text}</q>

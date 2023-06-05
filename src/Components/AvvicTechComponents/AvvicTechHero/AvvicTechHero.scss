@@ -1,40 +1,37 @@
-@import '../../App.scss';
+@import '../../../App.scss';
 
-#quote{
+#at-hero{
     position: relative;
-    font-family: $font;
+    width: $width;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: $text;
+    justify-content: space-between;
+    font-family: $font;
 
     figure{
         position: relative;
-        width: 70%;
+        width: 35%;
         overflow: hidden;
         padding: 1em;
-        // background: rgba($accent, 0.2);
-        // border-radius: $small-radius;
         margin: 1em;
 
         &::before,
         &::after{
             content: "";
             position: absolute;
-            background: rgba($accent, 0.6);
+            background: rgba($skyblue, 1);
             z-index: -1;
         }
 
         &::after{
-            width: 60%;
+            width: 70%;
             height: 85%;
             bottom: 0;
             right: 0;
         }
 
         &::before{
-            width: 30%;
+            width: 40%;
             height: 45%;
             top: 0;
             left: 0;
@@ -45,19 +42,29 @@
             width: 100%;
             z-index: 11;
         }
+
+        figcaption{
+            // position: absolute;
+            bottom: -10%;
+
+            h2{
+                color: $gray;
+                font-weight: 400;
+            }
+
+            p{
+                color: $blue;
+            }
+        }
     }
 
-    blockquote{
+    aside{
         position: relative;
-        border-top: 0.2em solid $main;
-        padding: 1em;
-    }
-}
+        width: 50%;
 
-@media screen and (max-width: 500px) {
-    #quote{
-        figure{
-            width: $width;
+        h1{
+            color: $blue;
+            font-weight: 400;
         }
     }
 }

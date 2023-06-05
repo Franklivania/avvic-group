@@ -5,6 +5,7 @@
     width: $width;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
     font-family: $font;
@@ -26,11 +27,6 @@
         //             0.02em 0.02em 0.2em rgba($black, 0.2),
         //             0.02em 0.02em 0.2em rgba($black, 0.2),
         //             0.02em 0.02em 0.2em rgba($black, 0.2);
-    }
-
-    .quote{
-        border-top: 0.2em solid $main;
-        padding: .5em;
     }
 
     // figure{
