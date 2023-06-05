@@ -36,3 +36,15 @@
         border-radius: $radius;
     }
 }
+
+@media screen and (max-width: 600px) {
+    #tech{
+        
+        #tech-hero{
+            
+            h1{
+                font-size: $text;
+            }
+        }
+    }
+}

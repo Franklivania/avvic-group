@@ -1,0 +1,74 @@
+@import '../../../App.scss';
+
+#at-offers{
+    position: relative;
+    width: $width;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+
+    h2{
+        color: $blue;
+        font-weight: 400;
+    }
+
+    .even-id, .odd-id{
+        display: flex;
+        align-items: center;
+        gap: 5em;
+
+        img{
+            width: calc($wk-width * 0.25);
+        }
+
+        span{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 2em;
+        }
+    }
+
+    .even-id{
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #at-offers{
+        position: relative;
+        padding: 1em;
+
+        .even-id, .odd-id{
+            flex-direction: column;
+            gap: 1em;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #at-offers{
+        position: relative;
+        gap: 2em;
+
+        .even-id, .odd-id{
+            gap: 2em;
+            padding: 2em 0;
+
+            img{
+                width: calc($wk-width * 0.2);
+            }
+
+            span{
+                gap: 1em;
+            }
+        }
+    }
+}

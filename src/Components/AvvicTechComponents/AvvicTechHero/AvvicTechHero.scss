@@ -5,8 +5,8 @@
     width: $width;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-family: $font;
+    gap: 5em;
 
     figure{
         position: relative;
@@ -66,5 +66,23 @@
             color: $blue;
             font-weight: 400;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #at-hero{
+        flex-direction: column;
+        padding: 0 2em;
+        
+        figure, aside{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #at-hero{
+        gap: 2em;
+
     }
 }

@@ -25,20 +25,20 @@
     },
     {
         "id": 5,
-        "image": "/images/it.png",
+        "image": "/images/governance.png",
         "title": "GOVERNANCE, INFRASTRUCTURE AND COMMUNICATION MANAGEMENT",
         "text": "We deploy a customized suite of corporate governance IT infrastructure and communication systems that are also adapted for public institutions. This solution meets the digital management requirements of modern businesses and government agencies."
     },
     {
         "id": 6,
-        "image": "/images/it.png",
-        "title": "IT SYSTEMS DEVELOPMENT AND MANAGEMENT",
-        "text": "We build core IT Systems and Applications, ground up, based on an organisations core function to engineer the automation of the business processes."
+        "image": "/images/support.png",
+        "title": "SUPPORT AND SUPPLEMENTARY SERVICES",
+        "text": "The diverse and specific IT needs of our clients are continuously evolving. We evolve with our client base and engage actively in the proactive creation of new solutions to ensure business continuity in a highly demanding environment. Our IT support and supplementary services are at the very core of our service commitment."
     },
     {
         "id": 7,
-        "image": "/images/it.png",
-        "title": "IT SYSTEMS DEVELOPMENT AND MANAGEMENT",
-        "text": "We build core IT Systems and Applications, ground up, based on an organisations core function to engineer the automation of the business processes."
+        "image": "/images/people.png",
+        "title": "OUR PEOPLE",
+        "text": "We are a value-driven team of talented, creative individuals who work in an environment that thrives on teamwork, creativity, consistent development, and expansion of the spheres of profitable opportunities for customers and stakeholders."
     }
 ]
