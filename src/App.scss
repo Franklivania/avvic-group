@@ -14,8 +14,12 @@ $black: #0e0e0e;
 $white: #fefefe;
 $main: #353C5B;
 $accent: #0D9999;
+$avvicblue: #336574;
 $sub: #D0FBFB;
+$skyblue: #B8D7E0;
 $brown: #c09c37;
+$gray : #777777;
+$blue: #1896FE;
 
 $height: 100vh;
 $width: 100%;
@@ -37,4 +41,8 @@ $extra-large-text: 4em;
     padding: .1em;
     background: $main;
     border-radius: $small-radius;
+}
+
+.App{
+    font-family: $font;
 }

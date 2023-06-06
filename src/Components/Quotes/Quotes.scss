@@ -1,14 +1,63 @@
 @import '../../App.scss';
 
-#quotes{
+#quote{
     position: relative;
     font-family: $font;
-    // margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: $text;
+
+    figure{
+        position: relative;
+        width: 70%;
+        overflow: hidden;
+        padding: 1em;
+        // background: rgba($accent, 0.2);
+        // border-radius: $small-radius;
+        margin: 1em;
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            background: rgba($accent, 0.6);
+            z-index: -1;
+        }
+
+        &::after{
+            width: 60%;
+            height: 85%;
+            bottom: 0;
+            right: 0;
+        }
+
+        &::before{
+            width: 30%;
+            height: 45%;
+            top: 0;
+            left: 0;
+        }
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            z-index: 11;
+        }
+    }
 
     blockquote{
         position: relative;
-        border-top: 0.1em solid $main;
+        border-top: 0.2em solid $main;
         padding: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #quote{
+        figure{
+            width: $width;
+        }
     }
 }

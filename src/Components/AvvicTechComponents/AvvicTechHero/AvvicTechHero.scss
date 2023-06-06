@@ -1,0 +1,89 @@
+@import '../../../App.scss';
+
+#at-hero{
+    position: relative;
+    width: $width;
+    display: flex;
+    align-items: center;
+    font-family: $font;
+    gap: 5em;
+    padding: 0 4em;
+
+    figure{
+        position: relative;
+        width: 35%;
+        overflow: hidden;
+        padding: 1em;
+        margin: 1em;
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            background: rgba($skyblue, 1);
+            z-index: -1;
+        }
+
+        &::after{
+            width: 70%;
+            height: 85%;
+            bottom: 0;
+            right: 0;
+        }
+
+        &::before{
+            width: 40%;
+            height: 45%;
+            top: 0;
+            left: 0;
+        }
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            z-index: 11;
+        }
+
+        figcaption{
+            // position: absolute;
+            bottom: -10%;
+
+            h2{
+                color: $gray;
+                font-weight: 400;
+            }
+
+            p{
+                color: $blue;
+            }
+        }
+    }
+
+    aside{
+        position: relative;
+        width: 50%;
+
+        h1{
+            color: $blue;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #at-hero{
+        flex-direction: column;
+        padding: 0 2em;
+        
+        figure, aside{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #at-hero{
+        gap: 2em;
+
+    }
+}

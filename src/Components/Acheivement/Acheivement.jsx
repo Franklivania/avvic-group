@@ -7,7 +7,7 @@ const Acheivement = () => {
   return (
     <div id='acheivement'>
         
-        <div id="left">
+        {/* <div id="left">
             <h2>OUR FOOTPRINT</h2>
 
             <span>
@@ -39,7 +39,7 @@ const Acheivement = () => {
 
                 <p>Milestones Achieved</p>
             </span>
-        </div>
+        </div> */}
 
         <div id="right">
             {achievement.map((item, index) => (
