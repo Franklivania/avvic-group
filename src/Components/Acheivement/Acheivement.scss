@@ -6,7 +6,7 @@
     display: flex;
     // align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding: 8em;
     gap: 2em;
 
     #left{
@@ -46,10 +46,10 @@
 
     #right{
         position: relative;
-        width: 60%;
+        width: 100%;
         display: grid;
         grid-template-columns: auto auto;
-        gap: 2em;
+        gap: 8em;
 
         #content{
             position: relative;

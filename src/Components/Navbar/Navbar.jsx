@@ -32,7 +32,7 @@ const Navbar = () => {
             </button>
             { open &&
                 <div className={`menu animate__animated ${open ? 'active' : ''}`}>
-                    <Navigation />
+                    <Navigation className={''}/>
                     <Button 
                         title={"CONTACT US"}
                         link={`/contact`}
@@ -45,7 +45,7 @@ const Navbar = () => {
   )
 }
 
-function Navigation () {
+function Navigation ({className}) {
     const [activeIndex, setActiveIndex] = useState(null)
 
     function onMouseHover(){
@@ -54,31 +54,31 @@ function Navigation () {
 
     return(
         <>
-            <Navitems link={`/`} title={"HOME"}/>
-            <Navitems link={`/about`} title={"ABOUT US"}/>
-            <Navitems link={'#'} title={"SUBSIDIARIES"} onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
+            <Navitems link={`/`} title={"Home"}/>
+            <Navitems link={`/about`} title={"About Us"}/>
+            <Navitems link={'#'} title={"Subsidiaries"} onMouseEnter={() => setActiveIndex(1)} onMouseLeave={() => setActiveIndex(null)}>
                 <i className='fa-solid fa-caret-down'></i>
                 {activeIndex === 1 && (
                     <div className='dropdown'>
-                        <NavContent link={`/consult`} title={"CONSULT"}/>
-                        <NavContent link={`/connect`} title={"CONNECT"}/>
+                        <NavContent link={`/consult`} title={"Consult"}/>
+                        <NavContent link={`/connect`} title={"Connect"}/>
                         {/* <NavContent link={`/homes`} title={"HOMES"}/> */}
                         {/* <NavContent link={`/agro`} title={"AGRO"}/> */}
-                        <NavContent link={`/tech`} title={"TECH"}/>
+                        <NavContent link={`/tech`} title={"Tech"}/>
                     </div>
                 )}
             </Navitems>
-            <Navitems link={`#`} title={"MEDIA"} onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(null)}>
+            <Navitems link={`#`} title={"Media"} onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(null)}>
                 <i className='fa-solid fa-caret-down'></i>
                 {activeIndex === 2 && (
                     <div className='dropdown'>
-                        <NavContent link={`/news`} title={"NEWS"}/>
-                        <NavContent link={`/photos`} title={"PHOTOS"}/>
-                        <NavContent link={`/videos`} title={"VIDEOS"}/>
+                        <NavContent link={`/news`} title={"News"}/>
+                        <NavContent link={`/photos`} title={"Photos"}/>
+                        <NavContent link={`/videos`} title={"Videos"}/>
                     </div>
                 )}
             </Navitems>
-            <Navitems link={`/careers`} title={"CAREERS"}/>
+            <Navitems link={`/careers`} title={"Careers"}/>
         </>
     )
 }

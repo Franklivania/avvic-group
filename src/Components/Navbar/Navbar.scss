@@ -1,8 +1,8 @@
 @import '../../App.scss';
 
 nav, menu{
-    // position: fixed;
-    position: relative;
+    position: fixed;
+    // position: relative;
     top: 0;
     width: $width;
     display: flex;
@@ -11,9 +11,10 @@ nav, menu{
     padding: .3em;
     background: $white;
     z-index: 99;
+    border-bottom: 0.02em solid $blue;
 
     img{
-        width: calc($wk-width * 0.13);
+        width: calc($wk-width * 0.1);
     }
 
     .link{
@@ -65,7 +66,7 @@ nav, menu{
     .btn{
         border: none;
         outline: none;
-        padding: 1em;
+        padding: 1em 1.7em;
         border-radius: $small-radius;
         cursor: pointer;
         background: $accent;
@@ -74,6 +75,18 @@ nav, menu{
         &:hover{
             background: $main;
         }
+    }
+}
+
+nav{
+    padding: .3em 4em;
+
+    .link{
+        margin-left: 2em;
+    }
+
+    .btn{
+        margin-left: auto;
     }
 }
 
@@ -113,7 +126,14 @@ menu{
 
         .dropdown{
             position: relative;
+            width: 0;
             margin-top: 1em;
+            padding: 0;
+            background: none;
+            border: none;
+            // align-items: flex-end;
+            box-shadow: none;
+            transition: all .3s ease-out;
         }
 
         .btn{
