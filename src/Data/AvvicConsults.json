@@ -1,0 +1,42 @@
+{
+    "market":[
+        {
+            "image": "/consults/marketfinance.png",
+            "title": "Financial Services",
+            "text": "Nigeria’s services output ranks as the fifth largest in Africa. The potential of the Nigerian financial services sector remains enormous"
+        },
+        {
+            "image": "/consults/markettech.png",
+            "title": "Information Technology",
+            "text": "Nigeria is Africa’s largest ICT market, accounting for 29% of internet usage in Africa."
+        },
+        {
+            "image": "/consults/marketagro.png",
+            "title": "Agriculture Services",
+            "text": "Nigeria’s agricultural sector employs nearly 70% of the population and comprises nearly 22% of GDP"
+        }
+    ],
+
+    "business":[
+        {
+            "icon": "fa-solid fa-diagram-project fa-3x ",
+            "title": "Market Analysis",
+            "text": "AVVIC offers vast market knowledge"
+        },
+        {
+            "icon": "fa-solid fa-expand fa-3x",
+            "title": "Strategic Planning",
+            "text": "We partner with you to clarify your business vision and mission"
+        },
+        {
+            "icon": "fa-solid fa-list-check fa-3x",
+            "title": "Project Delivery",
+            "text": "Establish status of excellence in growing business"
+        },
+        {
+            "icon": "fa-solid fa-compact-disc fa-3x",
+            "title": "Consultations",
+            "text": "Quality industry expertise to drive your business from basic development stages"
+        }
+    ]
+}

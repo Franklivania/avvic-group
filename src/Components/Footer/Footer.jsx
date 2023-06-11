@@ -33,7 +33,7 @@ const Footer = () => {
 
                 </label>
 
-                <p id='sub'>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+                <p id='sub'>By subscribing you agree to with our Privacy Policy and provide <br /> consent to receive updates from our company.</p>
             </aside>
 
             <aside>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <section>
                     <h1>Address</h1>
                     <p>
-                        House B1, Rose Gardens Courts,
+                        House B1, Rose Gardens Courts, <br />
                         Rangers Avenue, Enugu. Nigeria
                     </p>
                 </section>

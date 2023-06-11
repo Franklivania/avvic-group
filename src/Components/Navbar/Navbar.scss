@@ -1,9 +1,10 @@
 @import '../../App.scss';
 
 nav, menu{
-    position: fixed;
-    // position: relative;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    left: 0 ;
     width: $width;
     display: flex;
     align-items: center;

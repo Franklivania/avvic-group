@@ -1,0 +1,103 @@
+@import '../../../App.scss';
+
+#ac-offers{
+    position: relative;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    // gap: 6em;
+    overflow: hidden;
+    
+    h1{
+        color: $blue;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #ac-market-content, #ac-business-content{
+        position: relative;
+        width: 100%;
+        padding: 4em;
+    }
+    
+    #ac-market-content{
+        display: flex;
+        gap: 2em;
+
+        #market-content{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            box-shadow: 0.02em 0.02em 0.1em $gray,
+                        0.02em -0.02em 0.1em $gray,
+                        -0.02em 0.02em 0.1em $gray,
+                        -0.02em 0.02em 0.1em $gray;
+
+            span{
+                padding: 1em;
+                h3{
+                    color: $blue;
+                }
+                p{
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    #ac-business-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4em;
+        margin-left: 4em;
+        padding-bottom: 10em;
+        
+        
+        #business-content{
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        i{
+            color: $accent;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+            h3{
+                color: $blue;
+            }
+            p{
+                color: $gray;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #ac-offers{
+
+        #ac-market-content, #ac-business-content{
+            width: 100%;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+            #market-content{
+                width: 100%;
+            }
+        }
+
+        #ac-business-content{
+            padding: 2em;
+        }
+    }
+}

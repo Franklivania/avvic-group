@@ -67,3 +67,16 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    #acheivement{
+        padding: 2em;
+
+        #right{
+            width: 100%;
+            grid-template-columns: auto;
+            padding: 4em 0;
+            gap: 4em;
+        }
+    }
+}
