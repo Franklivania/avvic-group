@@ -10,46 +10,52 @@
     padding: 4em;
     background: linear-gradient(
         135deg,
-        rgba($white, 1),
+        rgba($white, 1) 60%,
         rgba($gray, 0.4)
     );
+    z-index: -2;
 
-    figure{
+    .at-hero-side{
         position: relative;
         width: 35%;
         overflow: hidden;
-        padding: 1em;
         margin: 1em;
-
-        &::before,
-        &::after{
-            content: "";
-            position: absolute;
-            background: rgba($skyblue, 1);
-            z-index: -1;
-        }
-
-        &::after{
-            width: 70%;
-            height: 85%;
-            bottom: 0;
-            right: 0;
-        }
-
-        &::before{
-            width: 40%;
-            height: 45%;
-            top: 0;
-            left: 0;
-        }
-
-        img{
-            object-fit: cover;
+        
+        figure{
+            position: relative;
             width: 100%;
-            z-index: 11;
+            padding: 1em;
+            
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                background: rgba($skyblue, 1);
+                z-index: -1;
+            }
+            
+            &::after{
+                width: 70%;
+                height: 85%;
+                bottom: 0;
+                right: 0;
+            }
+            
+            &::before{
+                width: 40%;
+                height: 45%;
+                top: 0;
+                left: 0;
+            }
+            
+            img{
+                object-fit: cover;
+                width: 100%;
+                z-index: 11;
+            }
         }
 
-        figcaption{
+        span{
             // position: absolute;
             bottom: -10%;
 
@@ -80,7 +86,7 @@
         flex-direction: column;
         padding: 0 2em;
         
-        figure, aside{
+        .at-hero-side, aside{
             width: 100%;
         }
     }

@@ -1,6 +1,6 @@
 @import '../../../App.scss';
 
-#ac-hero{
+#acn-hero{
     position: relative;
     width: $width;
     display: flex;
@@ -15,7 +15,7 @@
     );
     z-index: -2;
 
-    .ac-hero-side{
+    .acn-hero-side{
         position: relative;
         width: 35%;
         overflow: hidden;
@@ -72,59 +72,31 @@
 
     aside{
         position: relative;
+        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 2em;
-        width: 50%;
 
         h1{
             color: $blue;
             font-weight: 400;
         }
-
-        article{
-            display: flex;
-            flex-direction: column;
-            gap: .5em;
-
-            ul{
-                display: grid;
-                grid-template-columns: auto auto;
-                gap: 1em;
-            }
-        }
-
-        #consult-socials{
-            position: relative;
-            display: flex;
-            gap: 1em;
-
-            a{
-                color: $gray;
-                text-decoration: none;
-
-                &:hover{
-                    color: $avvicblue;
-                }
-            }
-        }
     }
 }
 
 @media screen and (max-width: 600px) {
-    #ac-hero{
+    #acn-hero{
         flex-direction: column;
         padding: 0 2em;
         
-        .ac-hero-side, aside{
+        .acn-hero-side, aside{
             width: 100%;
-            gap: 1em;
         }
     }
 }
 
 @media screen and (max-width: 1000px) {
-    #ac-hero{
+    #acn-hero{
         gap: 2em;
     }
 }

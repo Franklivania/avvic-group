@@ -7,6 +7,7 @@ import ContactUs from './Pages/ContactUs/ContactUs'
 import Careers from './Pages/Careers/Careers'
 import AvvicTech from './Pages/AvvicTech/AvvicTech'
 import AvvicConsult from './Pages/AvvicConsult/AvvicConsult'
+import AvvicConnect from './Pages/AvvicConnect/AvvicConnect'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/careers' element={<Careers />}/>
           <Route path='/tech' element={<AvvicTech />}/>
           <Route path='/consult' element={<AvvicConsult />}/>
+          <Route path='/connect' element={<AvvicConnect />}/>
         </Routes>
       </Router>
     </div>

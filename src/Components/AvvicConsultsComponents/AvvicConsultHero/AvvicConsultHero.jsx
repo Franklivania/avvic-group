@@ -7,14 +7,15 @@ const AvvicConsultHero = () => {
   return (
     <div id='ac-hero'>
 
-        <figure>
-            <img src={obioma} alt="" />
-
-            <figcaption>
+        <div className="ac-hero-side">
+            <figure>
+                <img src={obioma} alt="" />
+            </figure>
+            <span>
                 <h2>Obioma Akpagbula </h2>
                 <p>-Managing Director, Avvic Consult</p>
-            </figcaption>
-        </figure>
+            </span>
+        </div>
 
         <aside>
             <article>
