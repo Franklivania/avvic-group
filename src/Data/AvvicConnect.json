@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "image": "/images/business.png",
+        "title": "BUSINESS AND PERSONAL FINANCIAL ADVISORY",
+        "text": "We partner individuals and businesses to build data, develop and deploy financial solutions in an efficient manner. We harness the collective, seasoned experience of our team to provide creative financial solutions tailored to fit your specific needs."
+    },
+
+    {
+        "id": 2,
+        "image": "/images/peoples.png",
+        "title": "OUR PEOPLE",
+        "text": "We are a value-driven team of talented, creative individuals who work in an environment that thrives on teamwork, creativity, consistent development, and expansion of the spheres of profitable opportunities for customers and stakeholders."
+    }
+]
