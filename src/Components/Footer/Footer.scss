@@ -17,14 +17,14 @@ footer{
         width: calc($wk-width * 0.15);
         
         img{
-            padding-left: 2em;
+            padding-left: 4em;
             width: 100%;    
         }
     }
 
     .foot{
         position: relative;
-        padding: 0 2em;
+        padding: 0 4em;
         display: flex;
         justify-content: space-between;
         // flex-wrap: wrap;

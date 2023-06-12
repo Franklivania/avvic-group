@@ -1,6 +1,6 @@
 @import '../../../App.scss';
 
-#at-hero{
+#ac-hero{
     position: relative;
     width: $width;
     display: flex;
@@ -25,7 +25,7 @@
         &::after{
             content: "";
             position: absolute;
-            background: rgba($skyblue, 1);
+            background: rgba($capt-color, 1);
             z-index: -1;
         }
 
@@ -66,29 +66,59 @@
 
     aside{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
         width: 50%;
 
         h1{
             color: $blue;
             font-weight: 400;
         }
+
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: .5em;
+
+            ul{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 1em;
+            }
+        }
+
+        #consult-socials{
+            position: relative;
+            display: flex;
+            gap: 1em;
+
+            a{
+                color: $gray;
+                text-decoration: none;
+
+                &:hover{
+                    color: $avvicblue;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 600px) {
-    #at-hero{
+    #ac-hero{
         flex-direction: column;
         padding: 0 2em;
         
         figure, aside{
             width: 100%;
+            gap: 1em;
         }
     }
 }
 
 @media screen and (max-width: 1000px) {
-    #at-hero{
+    #ac-hero{
         gap: 2em;
-
     }
 }
