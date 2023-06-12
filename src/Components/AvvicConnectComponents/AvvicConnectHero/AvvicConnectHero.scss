@@ -89,7 +89,7 @@
         flex-direction: column;
         padding: 0 2em;
         
-        figure, aside{
+        .acn-hero-side, aside{
             width: 100%;
         }
     }
@@ -98,6 +98,5 @@
 @media screen and (max-width: 1000px) {
     #acn-hero{
         gap: 2em;
-
     }
 }

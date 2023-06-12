@@ -6,6 +6,7 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
 import SectionButton from '../../Components/SectionButton/SectionButton'
 import AvvicConnectHero from '../../Components/AvvicConnectComponents/AvvicConnectHero/AvvicConnectHero'
+import AvvicConnectOffers from '../../Components/AvvicConnectComponents/AvvicConnectOffers/AvvicConnectOffers'
 
 const AvvicConnect = () => {
   return (
@@ -18,6 +19,8 @@ const AvvicConnect = () => {
         </div>
 
         <AvvicConnectHero />
+
+        <AvvicConnectOffers />
 
         <Footer />
 

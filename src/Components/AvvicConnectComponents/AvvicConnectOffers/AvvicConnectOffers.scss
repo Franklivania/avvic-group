@@ -1,0 +1,70 @@
+@import '../../../App.scss';
+
+#acn-offers{
+    position: relative;
+    width: $width;
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    .even-id, .odd-id{
+        display: flex;
+        align-items: center;
+        gap: 6em;
+
+        img{
+            width: calc($wk-width * 0.3);
+        }
+
+        span{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            h2{
+                color: $blue;
+            }
+        }
+    }
+
+    .even-id{
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #acn-offers{
+        position: relative;
+        padding: 1em;
+
+        .even-id, .odd-id{
+            flex-direction: column;
+            gap: 1em;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #acn-offers{
+        position: relative;
+        gap: 2em;
+
+        .even-id, .odd-id{
+            gap: 2em;
+            padding: 2em 0;
+
+            img{
+                width: calc($wk-width * 0.2);
+            }
+
+            span{
+                gap: 1em;
+            }
+        }
+    }
+}
