@@ -1,0 +1,51 @@
+@import '../../App.scss';
+
+#connect{
+    position: relative;
+    font-family: $font;
+    width: $width;
+
+    #connect-hero{
+        position: relative;
+        width: 100%;
+
+        img{
+            width: 100%;
+            position: relative;
+            object-fit: cover;
+        }
+
+        h1{
+            position: absolute;
+            top: 25%;
+            left: 43%;
+            color: $white;
+            text-align: center;
+            font-size: $large-text;
+            font-weight: 500;
+        }
+    }
+
+    .connect-btn{
+        position: fixed;
+        background: $main;
+        display: grid;
+        place-items: center;
+        bottom: 2%;
+        right: 2%;
+        padding: .3em;
+        border-radius: $radius;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #connect{
+        
+        #connect-hero{
+
+            h1{
+                font-size: $text;
+            }
+        }
+    }
+}

@@ -6,14 +6,15 @@ const AvvicTechHero = () => {
   return (
     <div id='at-hero'>
 
-        <figure>
-            <img src={odera} alt="" />
-
-            <figcaption>
-                <h2>Odera Ogbodo</h2>
+        <div className="at-hero-side">
+            <figure>
+                <img src={odera} alt="" />
+            </figure>
+            <span>
+                <h2>Odera Ogbodo </h2>
                 <p>-Managing Director, Avvic Tech</p>
-            </figcaption>
-        </figure>
+            </span>
+        </div>
 
         <aside>
             <h1>About Us</h1>
