@@ -22,6 +22,13 @@ const AvvicConnectHero = () => {
                 Avvic Connect is an integrated financial consultancy and advisory services company. It offers unbundled financial consultancy services through strategic inter-industry partnerships, fitted to meet specific client needs in different sectors.
                 A member of the Avvic Group, Avvic Connect was incorporated in 2021 to deliver creative, innovative, and value-driven business and financial solutions leveraging technology.
             </p>
+
+            <div id="connect-socials">
+                <a href="/connect"><i className='fa-brands fa-facebook'></i></a>
+                <a href="/connect"><i className='fa-brands fa-instagram'></i></a>
+                <a href="/connect"><i className='fa-brands fa-twitter'></i></a>
+                <a href="/connect"><i className='fa-brands fa-linkedin'></i></a>
+            </div>
         </aside>
     </div>
   )
