@@ -1,0 +1,22 @@
+[
+    {
+        "image":"/hero/one.jpg",
+        "text": "Leading collaborative synergies that drive value"
+    },
+    {
+        "image":"/hero/two.jpg",
+        "text": "Providing unbundled financial consultancy"
+    },
+    {
+        "image":"/hero/three.jpg",
+        "text": "Strategic inter-industry partnerships"
+    },
+    {
+        "image":"/hero/four.jpg",
+        "text": "Deploying existing and emerging technologies"
+    },
+    {
+        "image":"/hero/five.jpg",
+        "text": "Technological, financial and business solutions for value chains"
+    }
+]
