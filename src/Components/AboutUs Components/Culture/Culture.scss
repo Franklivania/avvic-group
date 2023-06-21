@@ -7,7 +7,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
+    align-items: flex-start;
+    gap: 4em;
+    padding: 6em 4em;
 
     .container{
         position: relative;
@@ -52,6 +54,7 @@
 @media screen and (max-width: 500px) {
     #culture{
         position: relative;
+        padding: 6em 2em;
 
         .container{
             position: relative;

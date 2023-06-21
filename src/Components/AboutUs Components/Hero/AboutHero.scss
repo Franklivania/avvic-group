@@ -3,34 +3,22 @@
 #heros{
     position: relative;
     width: $width;
-    height: $height;
-    background: radial-gradient(
-        circle,
-        rgba($black, 0.3),
-        rgba($black, 0.9)
-    ),
-    url(../../../assets/about.jpg) no-repeat center;
     background-size: cover;
     font-family: $font;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
     color: $white;
-    padding: 0 2em;
 
-    h1{
-        font-family: $header-font;
-        font-size: $large-text;
-        font-weight: 500;
+    img{
+        object-fit: contain;
+        width: 100%;
     }
 
-    .mouse{
+    h1{
         position: absolute;
-        bottom: 3%;
-        align-self: center;
-        background: none;
-        outline: none;
-        border: none;
-        cursor: pointer;
+        top: 35%;
+        left: 40%;
+        font-family: $header-font;
+        font-size: clamp($text, 5vw, $large-text);
+        font-weight: 500;
     }
 }

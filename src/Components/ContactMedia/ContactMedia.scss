@@ -13,7 +13,7 @@
         object-fit: cover;
     }
 
-    .socials{
+    #socials{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
@@ -25,6 +25,7 @@
             align-items: center;
             gap: 1em;
             text-decoration: none;
+            color: $blue;
             color: $main;
         }
     }

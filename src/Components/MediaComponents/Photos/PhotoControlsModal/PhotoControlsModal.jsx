@@ -7,7 +7,7 @@ const PhotoControlsModal = ({ image, className, title, left, right, closeModal, 
   return (
     <div id='ph-ct-modal' className={className}>
         <div id="ph-modal-content">
-            <img src={image[currentSlide]} alt={title} />
+            <img src={image} alt={title} />
 
             <ToggleButton onClick={closeModal} className={`gallery-btns photo-close`}>
                 <i className='fa-solid fa-x fa-2x'></i>

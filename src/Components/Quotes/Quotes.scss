@@ -3,19 +3,20 @@
 #quote{
     position: relative;
     font-family: $font;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3em;
     font-size: $text;
 
     figure{
         position: relative;
-        width: 70%;
+        width: 80%;
+        height: calc($wk-height * 0.25);
         overflow: hidden;
         padding: 1em;
-        // background: rgba($accent, 0.2);
-        // border-radius: $small-radius;
         margin: 1em;
 
         &::before,
@@ -43,14 +44,22 @@
         img{
             object-fit: cover;
             width: 100%;
+            height: 100%;
             z-index: 11;
         }
     }
 
     blockquote{
         position: relative;
-        border-top: 0.2em solid $main;
+        border-top: 0.2em solid $blue;
         padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: .4em;
+
+        cite{
+            color: $blue;
+        }
     }
 }
 
