@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Photos.scss'
 import content from '../../../Data/Photos.json'
 import one from '../../../assets/1.jpg'
