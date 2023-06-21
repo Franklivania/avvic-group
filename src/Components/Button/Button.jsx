@@ -1,15 +1,17 @@
 import React from 'react'
+import './Button.scss'
 import { useNavigate } from 'react-router-dom'
-const Button = ({link, title, className}) => {
+const Button = ({link, title, className, children, onMouseEnter, onMouseLeave}) => {
     const navigate = useNavigate()
 
     function handleClick(){
-        navigate(link)
+      navigate(link)
     }
 
   return (
-    <button type='button' onClick={handleClick} className={className}>
+    <button type='button' id='gen-btn' onClick={handleClick} className={className} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         {title}
+        {children}
     </button>
   )
 }

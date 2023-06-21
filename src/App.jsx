@@ -8,6 +8,7 @@ import Careers from './Pages/Careers/Careers'
 import AvvicTech from './Pages/AvvicTech/AvvicTech'
 import AvvicConsult from './Pages/AvvicConsult/AvvicConsult'
 import AvvicConnect from './Pages/AvvicConnect/AvvicConnect'
+import Media from './Pages/Media/Media'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/tech' element={<AvvicTech />}/>
           <Route path='/consult' element={<AvvicConsult />}/>
           <Route path='/connect' element={<AvvicConnect />}/>
+          <Route path='/media' element={<Media />}/>
         </Routes>
       </Router>
     </div>

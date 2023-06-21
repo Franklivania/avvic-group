@@ -68,16 +68,9 @@ function Navigation ({className}) {
                     </div>
                 )}
             </Navitems>
-            <Navitems link={`#`} title={"Media"} onMouseEnter={() => setActiveIndex(2)} onMouseLeave={() => setActiveIndex(null)}>
-                <i className='fa-solid fa-caret-down'></i>
-                {activeIndex === 2 && (
-                    <div className='dropdown'>
-                        <NavContent link={`/news`} title={"News"}/>
-                        <NavContent link={`/photos`} title={"Photos"}/>
-                        <NavContent link={`/videos`} title={"Videos"}/>
-                    </div>
-                )}
-            </Navitems>
+
+            <Navitems link={`/media`} title={"Media"}/>
+
             <Navitems link={`/careers`} title={"Careers"}/>
         </>
     )

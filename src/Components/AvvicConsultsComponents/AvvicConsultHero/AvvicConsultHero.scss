@@ -56,8 +56,7 @@
         }
 
         span{
-            // position: absolute;
-            bottom: -10%;
+            position: relative;
 
             h2{
                 color: $gray;
@@ -83,6 +82,7 @@
         }
 
         article{
+            position: relative;
             display: flex;
             flex-direction: column;
             gap: .5em;
@@ -114,7 +114,7 @@
 @media screen and (max-width: 600px) {
     #ac-hero{
         flex-direction: column;
-        padding: 0 2em;
+        padding: 2em;
         
         .ac-hero-side, aside{
             width: 100%;

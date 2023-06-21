@@ -1,7 +1,6 @@
 import React, {useState, useEffect}from 'react'
 import './Footer.scss'
 import { Link } from 'react-router-dom';
-import right from '../../assets/right.png'
 import logo from '../../assets/avviclogo.png'
 
 const Footer = () => {
@@ -38,13 +37,13 @@ const Footer = () => {
 
             <aside>
                 <h2>Get in Touch</h2>
-                <section>
+                <div id='address'>
                     <h1>Address</h1>
                     <p>
                         House B1, Rose Gardens Courts, <br />
                         Rangers Avenue, Enugu. Nigeria
                     </p>
-                </section>
+                </div>
 
                 <a href="mailto:info@avvicgroup.com">info@avvicgroup.com</a>
                 <a href="tel:+234 814 9316 300">+234 814 9316 300</a>
