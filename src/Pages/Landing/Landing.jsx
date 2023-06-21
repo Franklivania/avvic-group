@@ -1,4 +1,3 @@
-import React from 'react'
 import { Element, animateScroll as scroll } from 'react-scroll';
 import './Landing.scss'
 import arrow from '../../assets/up.png'

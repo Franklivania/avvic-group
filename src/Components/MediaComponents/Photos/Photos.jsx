@@ -1,4 +1,3 @@
-import React from 'react'
 import './Photos.scss'
 import photomain from '../../../assets/photosmain.jpg'
 

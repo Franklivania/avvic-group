@@ -1,4 +1,3 @@
-import React from 'react'
 import './AvvicConsult.scss'
 import hero from '../../assets/consultimg.png'
 import up from '../../assets/up.png'

@@ -1,4 +1,3 @@
-import React from 'react'
 import './PhotoControlsModal.scss'
 import ToggleButton from '../../../ToggleButton/ToggleButton'
 
