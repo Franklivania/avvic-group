@@ -1,4 +1,3 @@
-import React from 'react'
 import './News.scss'
 import newsmain from '../../../assets/newsmain.jpg'
 

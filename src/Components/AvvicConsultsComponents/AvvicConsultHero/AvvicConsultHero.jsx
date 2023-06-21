@@ -1,4 +1,3 @@
-import React from 'react'
 import './AvvicConsultHero.scss'
 import obioma from '../../../assets/obinna.jpg'
 

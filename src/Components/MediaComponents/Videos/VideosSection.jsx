@@ -1,4 +1,3 @@
-import React from 'react'
 import './Videos.scss'
 import videos from '../../../Data/Videos.json';
 

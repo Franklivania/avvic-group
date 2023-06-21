@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-scroll'
 
 const SectionButton = ({image, text, title, className, to, onClick}) => {

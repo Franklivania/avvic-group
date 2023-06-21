@@ -1,4 +1,3 @@
-import React from 'react';
 import './AvvicConsultsOffers.scss';
 import content from '../../../Data/AvvicConsults.json';
 import { Fade } from 'react-awesome-reveal';

@@ -1,4 +1,3 @@
-import React from 'react'
 import './ToggleButton.scss'
 
 const ToggleButton = ( {onClick, title, className, children, disabled} ) => {

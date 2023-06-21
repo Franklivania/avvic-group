@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './Videos.scss';
 import videomain from '../../../assets/videomain.jpg';
 
