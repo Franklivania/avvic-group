@@ -6,6 +6,7 @@
     width: calc($wk-width * 0.19);
     overflow: hidden;
     border-radius: $small-radius;
+    cursor: pointer;
   
     img {
       position: relative;
@@ -15,7 +16,7 @@
       transition: transform 0.3s ease-out;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 
@@ -23,8 +24,11 @@
     position: relative;
     width: 100%;
     padding: .5em;
-    background: rgba($black, 0.5);
-    color: $white;
+    color: $black;
+
+    p{
+      color: $gray;
+    }
   }
 }
 
