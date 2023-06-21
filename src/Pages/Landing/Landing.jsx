@@ -4,10 +4,10 @@ import './Landing.scss'
 import arrow from '../../assets/up.png'
 import Navbar from '../../Components/Navbar/Navbar'
 import Hero from '../../Components/Hero/Hero'
-import Scope from '../../Components/Scope/Scope'
+// import Scope from '../../Components/Scope/Scope'
 import SectionButton from '../../Components/SectionButton/SectionButton';
 import InfoPanel from '../../Components/InfoPanel/InfoPanel';
-import Offers from '../../Components/Offers/Offers';
+// import Offers from '../../Components/Offers/Offers';
 import Footer from '../../Components/Footer/Footer';
 import Acheivement from '../../Components/Acheivement/Acheivement';
 
@@ -24,11 +24,9 @@ const Landing = () => {
     <div className='landing'>
         <Navbar />
 
-        <Element name='hero'>
-          <Hero className={'section'}/>
-        </Element>
+        <Hero className={'section'}/>
 
-          {/* <Scope className={'section'}/> */}
+        {/* <Scope className={'section'}/> */}
 
         <InfoPanel />
 

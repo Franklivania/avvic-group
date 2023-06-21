@@ -81,6 +81,21 @@
             color: $blue;
             font-weight: 400;
         }
+
+        #connect-socials{
+            position: relative;
+            display: flex;
+            gap: 1em;
+
+            a{
+                color: $gray;
+                text-decoration: none;
+
+                &:hover{
+                    color: $avvicblue;
+                }
+            }
+        }
     }
 }
 

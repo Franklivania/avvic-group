@@ -42,10 +42,10 @@ const AvvicConsultHero = () => {
             </article>
 
             <div id="consult-socials">
-                <a href="/consult"><i className='fa-brands fa-facebook'></i></a>
-                <a href="/consult"><i className='fa-brands fa-instagram'></i></a>
-                <a href="/consult"><i className='fa-brands fa-twitter'></i></a>
-                <a href="/consult"><i className='fa-brands fa-linkedin'></i></a>
+                <a href="/"><i className='fa-brands fa-facebook'></i></a>
+                <a href="/"><i className='fa-brands fa-instagram'></i></a>
+                <a href="/"><i className='fa-brands fa-twitter'></i></a>
+                <a href="/"><i className='fa-brands fa-linkedin'></i></a>
             </div>
 
         </aside>

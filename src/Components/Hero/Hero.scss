@@ -1,62 +1,70 @@
 @import '../../App.scss';
 
 #hero{
-    // position: absolute;
     position: relative;
-    top: 0;
     width: $width;
-    height: $height;
+    height: calc($height * 0.59);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-    video{
+    #hr-top{
         position: relative;
-        height: 100%;
         width: 100%;
-        object-fit: cover;
-    }
-
-    section{
-        position: absolute;
-        top: 0;
         height: 100%;
-        width: 100%;
-        background: rgba($black, 0.5);
-        color: $white;
-        font-family: $header-font;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 2em;
-        padding: 0 4em;
         
-        h1{
-            font-size: $large-text;
-            width: 50%;
-            font-weight: 400;
-        }
+        #hero-content{
+        position: relative;
+        width: 100%;
+        height: 100%;
 
-        .btn{
-            padding: 1em;
-            color: $white;
-            outline: none;
-            border: none;
-            border-radius: $small-radius;
-            background: $accent;
-            cursor: pointer;
-
-            &:hover{
-                background: $main;
+            img{
+                width: 100%;
+                object-fit: contain;
+                height: 100%;
             }
         }
-
-        .mouse{
+        span{
             position: absolute;
-            bottom: 3%;
-            align-self: center;
-            background: none;
-            outline: none;
-            border: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            padding: 0 1em;
+            background: rgba($black, 0.5);
+            font-size: calc($text * 2);
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            h2{
+                font-weight: 300;
+            }
+        }
+    }
+
+    .indicators{
+        position: absolute;
+        bottom: 5%;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        z-index: 20;
+
+        .indicator{
+            height: calc($wk-height * 0.01);
+            width: calc($wk-width * 0.01);
+            border-radius: $radius;
+            background: $white;
             cursor: pointer;
+
+            &.active{
+                background: $gray;
+            }
         }
     }
 }

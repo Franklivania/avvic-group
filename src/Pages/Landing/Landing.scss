@@ -3,7 +3,6 @@
 .landing{
     position: relative;
     width: 100%;
-    // height: $height;
     // overflow: hidden;
 
     .arrow{
@@ -19,9 +18,4 @@
         border: 0.02em solid $white;
     }
 
-}
-
-.section{
-    height: $height;
-    scroll-snap-align: start;
 }
