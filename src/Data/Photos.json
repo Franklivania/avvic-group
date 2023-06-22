@@ -86,6 +86,9 @@
         },
         {
             "image": "/photos/heritage/29.jpg"
+        },
+        {
+            "image": "/photos/heritage/30.jpg"
         }
     ],
 
@@ -173,9 +176,6 @@
         },
         {
             "image": "/photos/inauguration/28.jpg"
-        },
-        {
-            "image": "/photos/inauguration/29.jpg"
         }
     ],
 
@@ -221,12 +221,6 @@
         },
         {
             "image": "/photos/csr/14.jpg"
-        },
-        {
-            "image": "/photos/csr/15.jpg"
-        },
-        {
-            "image": "/photos/csr/16.jpg"
         }
     ]
 }
