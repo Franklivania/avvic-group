@@ -1,0 +1,40 @@
+@import '../../../App.scss';
+
+#photos{
+    position: relative;  
+}
+
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+
+    .imgdisplay{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        height: calc($wk-height * 0.2);
+        width: calc($wk-width * 0.2);
+        overflow: hidden;
+        cursor: pointer;
+        
+        img{
+            height: 95%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform .3s ease-in-out;
+        }
+
+        &:hover{
+            img{
+                transform: scale(1.13);
+            }
+        }
+    }
+}

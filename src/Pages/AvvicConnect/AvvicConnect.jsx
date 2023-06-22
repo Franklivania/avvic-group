@@ -15,7 +15,7 @@ const AvvicConnect = () => {
 
         <div id="connect-hero">
             <img src={hero} alt="" />
-            <h1>AVVIC <br /> CONSULT</h1>
+            <h1>AVVIC <br /> CONNECT</h1>
         </div>
 
         <AvvicConnectHero />
