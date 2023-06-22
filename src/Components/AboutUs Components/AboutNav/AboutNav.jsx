@@ -23,37 +23,32 @@ const AboutNav = ({ className, activeSection, setActiveSection }) => {
 
   return (
     <div id="aboutNav" className={className}>
-      <button type="button" id="open" onClick={handleOpen}>
-        <i className={`fa-solid fa-${!open ? 'times' : 'bars'} fa-2x`}></i>
-      </button>
-      {!open && (
-        <div className="list animate__animated">
-          <NavLink
-            link={''}
-            title={'ABOUT US'}
-            active={activeLink === null}
-            onClick={() => handleClick(null, null)}
-          />
-          <NavLink
-            link={''}
-            title={'LEADERSHIP'}
-            active={activeLink === 'leadership'}
-            onClick={() => handleClick('leadership', 'leadership')}
-          />
-          <NavLink
-            link={''}
-            title={'HISTORY'}
-            active={activeLink === 'history'}
-            onClick={() => handleClick('history', 'history')}
-          />
-          <NavLink
-            link={''}
-            title={'CULTURE'}
-            active={activeLink === 'culture'}
-            onClick={() => handleClick('culture', 'culture')}
-          />
-        </div>
-      )}
+      <div className="list animate__animated">
+        <NavLink
+          link={''}
+          title={'ABOUT US'}
+          active={activeLink === null}
+          onClick={() => handleClick(null, null)}
+        />
+        <NavLink
+          link={''}
+          title={'LEADERSHIP'}
+          active={activeLink === 'leadership'}
+          onClick={() => handleClick('leadership', 'leadership')}
+        />
+        <NavLink
+          link={''}
+          title={'HISTORY'}
+          active={activeLink === 'history'}
+          onClick={() => handleClick('history', 'history')}
+        />
+        <NavLink
+          link={''}
+          title={'CULTURE'}
+          active={activeLink === 'culture'}
+          onClick={() => handleClick('culture', 'culture')}
+        />
+      </div>
     </div>
   );
 };

@@ -15,19 +15,18 @@
         justify-content: space-evenly;
         padding: 1em 0;
         z-index: 11;
-        // background: $white;
 
         .toggle{
-            background: rgba($accent, 0.5);
-            color: $white;
+            background: none;
+            color: $black;
             cursor: pointer;
 
             &:hover{
-                background: rgba($accent, 0.8);
+                border-bottom: 0.02em solid $blue;
             }
 
             &.active{
-                background: $accent;
+                border-bottom: 0.02em solid $blue;
             }
         }
 

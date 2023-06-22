@@ -45,4 +45,8 @@ $extra-large-text: 4em;
 
 .App{
     font-family: $font;
+
+    h1,h2,h3,h4,p{
+        font-family: $font;
+    }
 }

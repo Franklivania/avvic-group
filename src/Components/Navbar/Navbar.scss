@@ -30,11 +30,16 @@ nav, menu{
         &:hover{
             color: rgba($accent, 0.5);
         }
+
+        &.active{
+            color: $blue;
+        }
     }
 
     i{
         color: $accent;
     }
+    
     .dropdown{
         position: absolute;
         width: calc($wk-width * 0.16);

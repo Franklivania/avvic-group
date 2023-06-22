@@ -15,11 +15,13 @@
         height: calc($wk-width * 0.15);
         object-fit: cover;
         border-radius: $small-radius;
+        padding: 1em 4em;
     }
 
     p{
         font-family: $font;
         margin: 1em 0;
+        padding: 0 4em;
     }
 
     
@@ -31,6 +33,7 @@
         margin-top: 2em;
         display: grid;
         place-items: center;
+        z-index: 0;
 
         #icon{
             width: 3em;
@@ -70,12 +73,13 @@
         justify-content: space-between;
         flex-wrap: wrap;
         flex: 1/1;
-        // gap: .5em;
+        padding: 6em 0;
 
         .container{
             position: relative;
             width: 45%;
             margin: 1em 0;
+            text-align: justify;
 
             h2{
                 font-family: $header-font;
@@ -84,6 +88,7 @@
                 display: flex;
                 align-items: center;
                 gap: .2em;
+                padding: 0 3em;
 
                 img{
                     width: 1em;
@@ -100,6 +105,11 @@
 @media screen and (max-width: 500px) {
     #history{
         position: relative;
+        padding: 0;
+
+        p{
+            padding: 2em;
+        }
 
         #subs{
             position: relative;
@@ -113,6 +123,7 @@
 
                 h2{
                     width: 100%;
+                    align-self: flex-start;
                 }
             }
         }

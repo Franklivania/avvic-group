@@ -2,31 +2,33 @@
 
 #profile {
     position: relative;
-    height: calc($wk-height * 0.2);
+    height: calc($wk-height * 0.25);
     width: calc($wk-width * 0.19);
     overflow: hidden;
     border-radius: $small-radius;
+    cursor: pointer;
   
     img {
-    // position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease-out;
+      position: relative;
+      height: 70%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-out;
 
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 
   .pop{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     padding: .5em;
-    background: rgba($black, 0.5);
-    color: $white;
+    color: $black;
+
+    p{
+      color: $gray;
+    }
   }
 }
 

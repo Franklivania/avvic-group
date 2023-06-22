@@ -44,7 +44,7 @@ const PhotosSection = () => {
         <PhotoControlsModal
           key={idx}
           closeModal={handleModalDisplay}
-          image={items.image[currentSlide]}
+          image={items.image}
           left={left}
           right={() => right(items.image.length)}
           currentSlide={currentSlide}
@@ -57,7 +57,7 @@ const PhotosSection = () => {
         <PhotoControlsModal
           key={idx}
           closeModal={handleModalDisplay}
-          image={items.image[currentSlide]}
+          image={items.image}
           left={left}
           right={() => right(items.image.length)}
           currentSlide={currentSlide}
@@ -70,7 +70,7 @@ const PhotosSection = () => {
         <PhotoControlsModal
           key={idx}
           closeModal={handleModalDisplay}
-          image={items.image[currentSlide]}
+          image={items.image}
           left={left}
           right={() => right(items.image.length)}
           currentSlide={currentSlide}

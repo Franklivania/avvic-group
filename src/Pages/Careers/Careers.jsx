@@ -2,8 +2,7 @@ import React from 'react'
 import './Careers.scss'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
-import SectionButton from '../../Components/SectionButton/SectionButton'
-import mouse from '../../assets/mouse.png'
+import carrersimg from '../../assets/business.jpg'
 import career1 from '../../assets/career1.jpg'
 import career2 from '../../assets/career2.jpg'
 import ToggleButton from '../../Components/ToggleButton/ToggleButton'
@@ -15,13 +14,8 @@ const Careers = () => {
         <Navbar />
 
         <div id="career-hero">
+            <img src={carrersimg} alt="" />
             <h1>CAREERS</h1>
-
-            <SectionButton 
-                className={'mouse animate__animated animate__bounce animate__infinite animate__slow'} 
-                image={mouse} 
-                to={'career-container'}
-            />
         </div>
 
         <div id="career-container">
