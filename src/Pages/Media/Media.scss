@@ -4,6 +4,8 @@
     position: relative;
     width: $width;
     padding: 0;
+    font-size: calc($text * 0.83);
+
 
     #media-hero{
         position: relative;
