@@ -3,6 +3,9 @@
 #mt{
     position: relative;
     width: $width;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 
     h2{
         text-align: center;

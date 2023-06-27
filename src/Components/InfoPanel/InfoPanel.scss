@@ -3,19 +3,29 @@
 #info{
     position: relative;
     width: $width;
-    padding: 4em;
+    padding: 7em 0 0 0;
     text-align: center;
 
     h1{
         font-family: $header-font;
         font-size: $large-text;
         color: $main;
-        font-weight: 500;
+        font-weight: 700;
+        padding: 0 8em;
     }
     p{
         font-family: $font;
         font-size: $text;
         color: $black;
         font-size: $text;
+        padding: 0 20em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #info{
+        h1, p{
+            padding: 0;
+        }
     }
 }

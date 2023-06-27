@@ -10,7 +10,7 @@ footer{
     background: $avvicblue;
     color: $white;
     font-family: $font;
-    font-size: $text;
+    // font-size: $text;
 
     #foot-logo{
         position: relative;
@@ -31,12 +31,12 @@ footer{
         flex: 1/1;
         gap: 1em;
         width: 100%;
-        font-family: $font;
-        font-size: $text;
+        // font-family: $font;
+        // font-size: $text;
 
         
         h2{
-            font-family: $header-font;
+            // font-family: $header-font;
             font-weight: 400;
         }
         
@@ -48,7 +48,7 @@ footer{
             
             .links{
                 margin: 0.2em 0;
-                font-family: $font;
+                // font-family: $font;
                 text-decoration: none;
                 color: rgba($white, 0.7);
                 
@@ -68,7 +68,7 @@ footer{
             
             a{
                 color: $white;
-                font-family: $font;
+                // font-family: $font;
                 
             }
 
@@ -106,7 +106,7 @@ footer{
                     font-size: $text;
                     padding: .5em;
                     border-radius: $small-radius;
-                    font-family: $font;
+                    // font-family: $font;
                 }
                 button{
                     position: relative;
@@ -137,7 +137,7 @@ footer{
         justify-content: space-between;
         
         p{
-            font-family: $font;
+            // font-family: $font;
         }
 
         #privacy{
@@ -161,6 +161,8 @@ footer{
             position: relative;
             width: 100%;
             flex-wrap: wrap;
+            padding: 0 2em;
+            gap: 3em;
 
             aside{
                 position: relative;

@@ -5,8 +5,13 @@
     height: calc($wk-height * 0.25);
     width: calc($wk-width * 0.19);
     overflow: hidden;
-    border-radius: $small-radius;
+    // border-radius: $small-radius;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
+
+    &:hover{
+      box-shadow: 0.01em 0.01em .3em $black;
+    }
   
     img {
       position: relative;

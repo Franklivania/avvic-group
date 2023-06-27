@@ -21,11 +21,10 @@ nav, menu{
     .link{
         position: relative;
         text-decoration: none;
-        font-family: $font;
-        letter-spacing: 0.2em;
+        letter-spacing: 0.1em;
         font-size: $text;
         transition: transform .3s ease-in-out;
-        color: $accent;
+        color: $accent; 
 
         &:hover{
             color: rgba($accent, 0.5);
@@ -60,6 +59,7 @@ nav, menu{
             transition: transform .2s ease-in-out;
             padding: .3em;
             border-radius: $small-radius;
+            font-size: $footer-text;
             
             &:hover{
                 transform: scale(1.05);
@@ -73,13 +73,14 @@ nav, menu{
         border: none;
         outline: none;
         padding: 1em 1.7em;
-        border-radius: $small-radius;
+        border-radius: calc($small-radius * 4);
         cursor: pointer;
-        background: $accent;
+        background: $main;
         color: $white;
+        box-shadow: 0.02em 0.3em .3em $black;
 
         &:hover{
-            background: $main;
+            background: $accent;
         }
     }
 }

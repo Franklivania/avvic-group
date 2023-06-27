@@ -14,7 +14,7 @@
     figure{
         position: relative;
         width: 80%;
-        height: calc($wk-height * 0.25);
+        height: calc($wk-height * 0.17);
         overflow: hidden;
         padding: 1em;
         margin: 1em;
@@ -65,8 +65,11 @@
 
 @media screen and (max-width: 500px) {
     #quote{
+        width: 100%;
+        padding: 0;
+
         figure{
-            width: $width;
+            width: 100%;
         }
     }
 }

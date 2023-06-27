@@ -5,11 +5,11 @@
     width: $width;
     height: 100%;
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
     font-family: $font;
-    padding: 4em 2em;
+    padding: 4em 8em 4em 3em;
     gap: 2em;
 
     p{
@@ -17,6 +17,7 @@
         width: 90%;
         color: $gray;
         text-align: justify;
+        margin-top: 8em;
     }
 }
 
@@ -24,6 +25,7 @@
     #aboutMain{
         display: flex;
         flex-direction: column-reverse;
+        padding: 1em;
 
         p{
             width: 100%;

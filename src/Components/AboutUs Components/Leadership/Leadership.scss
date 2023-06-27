@@ -4,6 +4,9 @@
     position: relative;
     width: 100%;
     font-family: $font;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
 
     .buttons{
         position: -webkit-sticky;

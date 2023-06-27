@@ -7,16 +7,22 @@ const Quotes = ({className}) => {
   const [quote, setQuote] = useState({ text: '', author: '' });
 
   useEffect(() => {
-    fetch('https://type.fit/api/quotes')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        if (Array.isArray(data) && data.length > 0) {
-          const randomQuote = data[Math.floor(Math.random() * data.length)];
-          setQuote({ text: randomQuote.text, author: randomQuote.author });
-        }
-      });
+    const timer = setInterval(() => {
+      fetch('https://type.fit/api/quotes')
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          if (Array.isArray(data) && data.length > 0) {
+            const randomQuote = data[Math.floor(Math.random() * data.length)];
+            setQuote({ text: randomQuote.text, author: randomQuote.author });
+          }
+        });
+    }, 10000);
+
+    return () => {
+      clearInterval(timer);
+    };
   }, []);
 
   return (
@@ -26,10 +32,10 @@ const Quotes = ({className}) => {
             <img src={career2} alt="" />
         </figure>
 
-        <blockquote className='animate__animated animate__sildeInRight'>
-            <q>{quote.text}</q>
+        <blockquote >
+            <q className='animate__animated animate__fadeInRight'>{quote.text}</q>
             <br />
-            <cite>- {quote.author}</cite>
+            <cite className='animate__animated animate__fadeInRight animare'>- {quote.author}</cite>
         </blockquote>
     </div>
   );
