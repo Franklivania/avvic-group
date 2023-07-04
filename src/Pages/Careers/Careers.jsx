@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import './Careers.scss'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
@@ -6,9 +6,16 @@ import carrersimg from '../../assets/business.jpg'
 import career1 from '../../assets/career1.jpg'
 import career2 from '../../assets/career2.jpg'
 import ToggleButton from '../../Components/ToggleButton/ToggleButton'
+import ApplicationModal from '../../Components/ApplicationModal/ApplicationModal'
 
 
 const Careers = () => {
+    const [openApplication, setOpenApplication] = useState(false)
+
+    const applicationOpen = () => {
+        setOpenApplication(!openApplication)
+    }
+
   return (
     <div id='careers'>
         <Navbar />
@@ -81,8 +88,11 @@ const Careers = () => {
             <ToggleButton 
                 title={"Apply"}
                 className={"toggle"}
+                onClick={applicationOpen}
             />
         </div>
+
+        {openApplication && <ApplicationModal closeApplication={applicationOpen} />}
 
         <Footer />
     </div>

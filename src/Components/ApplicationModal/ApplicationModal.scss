@@ -1,0 +1,92 @@
+@import '../../App.scss';
+
+#app-modal{
+    position: fixed;
+    width: $width;
+    height: $height;
+    background: rgba($black, 0.5);
+    display: grid;
+    place-items: center;
+    z-index: 999;
+
+    #application-content{
+        position: relative;
+        background: $white;
+        width: 60%;
+        height: 90%;
+        padding: 2em;
+        overflow-x: hidden;
+
+        h1{
+            color: $avvicblue;
+        }
+        small{
+            color: $red;
+        }
+
+        form{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 2em 0;
+            gap: 2em;
+            width: 100%;
+
+            .app-close{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            span{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // gap: .3em;
+
+                label{
+                    // padding: 0 .3em;
+                    position: relative;
+
+                    &::after{
+                        content: '*';
+                        position: absolute;
+                        top: 0;
+                        color: $red;
+                    }
+                }
+
+                input{
+                    position: relative;
+                    width: 100%;
+                    padding: .5em;
+                    font-family: $font;
+                    outline: none;
+                    border: 0.1em solid $main;
+                }
+            }
+
+            #app-submit{
+                padding: 1em 0;
+                color: $white;
+                background: $avvicblue;
+                outline: none;
+                border: none;
+                cursor: pointer;
+
+                &:hover{
+                    background: $accent;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #app-modal{
+        #application-content{
+            width: 90%;
+        }
+    }
+}

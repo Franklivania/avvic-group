@@ -35,16 +35,18 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 2em;
-        gap: 1em;
+        padding: 4em;
+        gap: 10em;
         font-family: $font;
 
         .top{
             display: flex;
             justify-content: space-around;
+            gap: 5em;
 
             aside{
                 padding: 1em;
+                text-align: justify;
 
                 h1{
                     color: $main;
@@ -86,6 +88,7 @@
             align-items: center;
             justify-content: center;
             margin: 1em 0;
+            gap: 3em;
 
             h1{
                 color: $main;
@@ -98,8 +101,9 @@
 
             aside{
                 display: flex;
-                gap: 2em;
+                gap: 5em;
                 padding: 3em;
+                text-align: justify;
 
                 img{
                     object-fit: cover;
@@ -152,6 +156,14 @@
             .top{
                 flex-direction: column-reverse;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #careers{
+        #career-container{
+            padding: 2em;
         }
     }
 }
