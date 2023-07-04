@@ -21,7 +21,7 @@ const ContactUs = () => {
             <ContactMedia />
 
             <span>
-                <img src={icon} alt="" />
+              <img src={icon} alt="" />
             </span>
 
             <ContactForm />

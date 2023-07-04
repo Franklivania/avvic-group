@@ -3,11 +3,13 @@
 #form{
     position: relative;
     width: $width;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 
     h1{
         color: $main;
         font-family: $font;
-        font-size: $large-text * 0.8;
     }
 
     #analytics{
@@ -64,9 +66,10 @@
         font-family: $font;
         font-size: $text;
         letter-spacing: .1em;
+        border: 0.02em solid $accent;
+        cursor: pointer;
 
         &:hover{
-            border: 0.02em solid $accent;
             background: $white;
             color: $accent;
         }

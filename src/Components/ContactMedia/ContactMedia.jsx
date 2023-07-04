@@ -8,7 +8,7 @@ const ContactMedia = ({className}) => {
                 At AVVIC, we ensure to give you the best possible results for your time
                 As such, we prioritise customer satisfacton. 
                 
-                    <br />
+                    {/* <br /> */}
 
                 To ensure your satisfaction, and to keep with our latest trends, don't fail to follow below!
             </p>
