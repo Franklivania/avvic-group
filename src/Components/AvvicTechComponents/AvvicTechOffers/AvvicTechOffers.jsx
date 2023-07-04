@@ -5,7 +5,8 @@ import data from '../../../Data/AvvicTech.json'
 const AvvicTechOffers = () => {
   return (
     <div id='at-offers'>
-        <h2>Our Services</h2>
+        <h1>Our Services</h1>
+
         {data.map((items, index) => (
             <div className={items.id % 2 === 0 ? 'even-id' : 'odd-id'} key={items.id}>
                 <img src={items.image} alt={items.title} />

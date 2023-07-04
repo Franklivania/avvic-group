@@ -3,13 +3,14 @@
 #at-offers{
     position: relative;
     width: $width;
-    padding: 6em 4em;
+    padding: 6em 8em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1em;
+    gap: 3em;
+    text-align: justify;
 
-    h2{
+    h1, h2{
         color: $blue;
         font-weight: 400;
     }
@@ -41,6 +42,7 @@
     #at-offers{
         position: relative;
         padding: 1em;
+        text-align: left;
 
         .even-id, .odd-id{
             flex-direction: column;

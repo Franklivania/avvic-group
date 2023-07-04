@@ -3,10 +3,11 @@
 #acn-offers{
     position: relative;
     width: $width;
-    padding: 6em;
+    padding: 6em 8em;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 5em;
+    text-align: justify;
 
     .even-id, .odd-id{
         display: flex;
@@ -37,6 +38,7 @@
     #acn-offers{
         position: relative;
         padding: 1em;
+        text-align: left;
 
         .even-id, .odd-id{
             flex-direction: column;
