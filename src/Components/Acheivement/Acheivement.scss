@@ -6,7 +6,7 @@
     display: flex;
     // align-items: center;
     justify-content: center;
-    padding: 8em;
+    padding: 7em 8em;
     gap: 2em;
 
     #left{
@@ -57,12 +57,12 @@
             width: 100%;
 
             i{
-                color: $main;
+                color: $accent
             }
 
             h2{
                 display: flex;
-                color: $main;
+                color: $accent;
             }
         }
     }

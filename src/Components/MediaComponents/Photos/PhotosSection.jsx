@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import './Photos.scss'
-import content from '../../../Data/Photos.json'
-import one from '../../../assets/1.jpg'
-import two from '../../../assets/2.jpg'
-import three from '../../../assets/3.jpg'
-import PhotoControlsModal from './PhotoControlsModal/PhotoControlsModal'
+import { useState } from "react";
+import "./Photos.scss";
+import content from "../../../Data/Photos.json";
+import one from "../../../assets/1.jpg";
+import two from "../../../assets/2.jpg";
+import three from "../../../assets/3.jpg";
+import PhotoControlsModal from "./PhotoControlsModal/PhotoControlsModal";
 
 const PhotosSection = () => {
   const [displayModal, setDisplayModal] = useState(null);
@@ -40,46 +40,43 @@ const PhotosSection = () => {
         <h3>CSR-IMT Got Talent</h3>
       </div>
 
-      {displayModal === 1 && content.heritage.map((items, idx) => (
+      {displayModal === 1 && (
         <PhotoControlsModal
-          key={idx}
           closeModal={handleModalDisplay}
-          image={items.image}
+          images={content.heritage}
           left={left}
-          right={() => right(items.image.length)}
+          right={() => right(content.heritage.length)}
           currentSlide={currentSlide}
-          totalSlides={items.image.length}
-          className={displayModal === 1 ? 'modal-display' : ''}
+          totalSlides={content.heritage.length}
+          className={displayModal === 1 ? "modal-display" : ""}
         />
-      ))}
+      )}
 
-      {displayModal === 2 && content.inauguration.map((items, idx) => (
+      {displayModal === 2 && (
         <PhotoControlsModal
-          key={idx}
           closeModal={handleModalDisplay}
-          image={items.image}
+          images={content.inauguration}
           left={left}
-          right={() => right(items.image.length)}
+          right={() => right(content.inauguration.length)}
           currentSlide={currentSlide}
-          totalSlides={items.image.length}
-          className={displayModal === 2 ? 'modal-display' : ''}
+          totalSlides={content.inauguration.length}
+          className={displayModal === 2 ? "modal-display" : ""}
         />
-      ))}
+      )}
 
-      {displayModal === 3 && content.csr.map((items, idx) => (
+      {displayModal === 3 && (
         <PhotoControlsModal
-          key={idx}
           closeModal={handleModalDisplay}
-          image={items.image}
+          images={content.csr}
           left={left}
-          right={() => right(items.image.length)}
+          right={() => right(content.csr.length)}
           currentSlide={currentSlide}
-          totalSlides={items.image.length}
-          className={displayModal === 3 ? 'modal-display' : ''}
+          totalSlides={content.csr.length}
+          className={displayModal === 3 ? "modal-display" : ""}
         />
-      ))}
+      )}
     </section>
   );
-}
+};
 
 export default PhotosSection;

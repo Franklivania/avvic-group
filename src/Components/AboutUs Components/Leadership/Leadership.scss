@@ -15,12 +15,16 @@
         width: $width;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 1em;
         padding: 1em 0;
         z-index: 11;
 
         .toggle{
+            position: relative;
             background: none;
+            width: max-content;
+            padding: .4em .7em;
             color: $black;
             cursor: pointer;
 
@@ -30,6 +34,7 @@
 
             &.active{
                 border-bottom: 0.02em solid $blue;
+                color: $avvicblue;
             }
         }
 

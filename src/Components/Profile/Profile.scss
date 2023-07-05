@@ -1,28 +1,23 @@
 @import '../../App.scss';
 
 #profile {
+  position: relative;
+  height: calc($wk-height * 0.25);
+  width: calc($wk-width * 0.19);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+
+  &:hover{
+    box-shadow: 0.01em 0.01em .6em $black;
+    transform: scale(0.95);
+  }
+
+  img {
     position: relative;
-    height: calc($wk-height * 0.25);
-    width: calc($wk-width * 0.19);
-    overflow: hidden;
-    // border-radius: $small-radius;
-    cursor: pointer;
-    transition: transform 0.3s ease-out;
-
-    &:hover{
-      box-shadow: 0.01em 0.01em .3em $black;
-    }
-  
-    img {
-      position: relative;
-      height: 70%;
-      width: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease-out;
-
-    &:hover {
-      transform: scale(1.1);
-    }
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .pop{
@@ -30,9 +25,15 @@
     width: 100%;
     padding: .5em;
     color: $black;
+    text-align: center;
+
+    h5{
+      color: $main;
+    }
 
     p{
       color: $gray;
+      font-size: calc($text * 0.7);
     }
   }
 }

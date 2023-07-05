@@ -8,7 +8,7 @@ const Profile = ({ image, children, title, className, name, onClick, key }) => {
       <img src={image} alt={name} title={name} />
       {children}
       <div className="pop animate__animated">
-        <h4>{name}</h4>
+        <h5>{name}</h5>
         <p>{title}</p>
       </div>
     </div>

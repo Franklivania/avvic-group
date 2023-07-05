@@ -6,7 +6,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    padding: 2em 0;
+    padding: 4em;
     background: $avvicblue;
     color: $white;
     font-family: $font;
@@ -31,24 +31,20 @@ footer{
         flex: 1/1;
         gap: 1em;
         width: 100%;
-        // font-family: $font;
-        // font-size: $text;
+        font-family: $font;
 
         
         h2{
-            // font-family: $header-font;
             font-weight: 400;
         }
         
         .menu, .subs{
             position: relative;
             display: flex;
-            // width: 20%;
             flex-direction: column;
             
             .links{
                 margin: 0.2em 0;
-                // font-family: $font;
                 text-decoration: none;
                 color: rgba($white, 0.7);
                 
@@ -67,9 +63,11 @@ footer{
             gap: 1em;
             
             a{
+                color: $white;   
+            }
+
+            p{
                 color: $white;
-                // font-family: $font;
-                
             }
 
             
@@ -97,15 +95,16 @@ footer{
                 width: calc($wk-width * 0.3);
                 display: flex;
                 // flex-direction: column;
+                color: $white;
                 gap: 1em;
 
                 input{
-                    width: 100%;
+                    width: 60%;
                     outline: none;
                     border: none;
                     font-size: $text;
                     padding: .5em;
-                    border-radius: $small-radius;
+                    border-radius: calc($small-radius * 2);
                     // font-family: $font;
                 }
                 button{
@@ -116,7 +115,7 @@ footer{
                     outline: none;
                     border: none;
                     border: 0.02em solid $white;
-                    border-radius: $small-radius;
+                    border-radius: calc($small-radius * 5);
                     cursor: pointer;
 
                     &:hover{
@@ -135,9 +134,10 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-family: $font;
         
         p{
-            // font-family: $font;
+            color: $white;
         }
 
         #privacy{
@@ -186,5 +186,20 @@ footer{
             flex-direction: column;
             gap: 1em;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        padding: 1em;
+
+        #foot-logo{
+            position: relative;
+            
+            img{
+                padding-left: 2em;    
+            }
+        }
+    
     }
 }

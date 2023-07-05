@@ -22,9 +22,10 @@ nav, menu{
         position: relative;
         text-decoration: none;
         letter-spacing: 0.1em;
-        font-size: $text;
+        font-size: calc($text * 0.7);
         transition: transform .3s ease-in-out;
         color: $accent; 
+        text-transform: uppercase;
 
         &:hover{
             color: rgba($accent, 0.5);
@@ -75,12 +76,12 @@ nav, menu{
         padding: 1em 1.7em;
         border-radius: calc($small-radius * 4);
         cursor: pointer;
-        background: $main;
+        background: $accent;
         color: $white;
-        box-shadow: 0.02em 0.3em .3em $black;
+        box-shadow: 0.02em 0.3em .5em $black;
 
         &:hover{
-            background: $accent;
+            background: $avvicblue;
         }
     }
 }

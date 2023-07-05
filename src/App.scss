@@ -54,6 +54,10 @@ $extra-large-text: 4em;
     //     font-family: $font;
     // }
 
+    p{
+        color: $gray;
+    }
+
     footer{
         font-family: $footer-font;
         font-size: $footer-text;
