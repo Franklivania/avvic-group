@@ -21,6 +21,15 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 2em;
-        border-radius: $small-radius;
+        padding: 0 6em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #bod{
+        .bod-container{
+            width: auto;
+            padding: 0;
+        }
     }
 }

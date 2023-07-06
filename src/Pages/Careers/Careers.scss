@@ -144,6 +144,7 @@
     #careers{
 
         #career-container{
+            padding: none;
 
             .top, .bottom{
                 flex-wrap: wrap;
@@ -158,6 +159,12 @@
 
                     img{
                         width: 100%;
+                    }
+                }
+
+                article{
+                    p{
+                        padding: 0;
                     }
                 }
             }

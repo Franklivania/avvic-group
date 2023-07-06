@@ -28,7 +28,7 @@ const Navbar = () => {
           <img src={logo} alt={"avvic-logo"} />
         </Link>
 
-        <button type='button' onClick={handleToggle} id='switch'>
+        <button  type='none' onClick={handleToggle} id='switch'>
           <i className={`fa-solid fa-${open ? 'times' : 'bars'} fa-3x`}></i>
         </button>
         {open && (
