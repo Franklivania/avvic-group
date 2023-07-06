@@ -25,9 +25,9 @@ const Landing = () => {
 
         <Hero className={'section'}/>
 
-        {/* <Scope className={'section'}/> */}
-
         <InfoPanel />
+
+        {/* <Scope className={'section'}/> */}
 
         <Acheivement />
 

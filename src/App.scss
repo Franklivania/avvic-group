@@ -58,6 +58,12 @@ $extra-large-text: 4em;
         color: $gray;
     }
 
+    ul{
+        li{
+            color: $gray;
+        }
+    }
+
     footer{
         font-family: $footer-font;
         font-size: $footer-text;

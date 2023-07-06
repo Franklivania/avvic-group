@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $height;
+    width: $width;
+    display: grid;
+    place-items: center;
+    z-index: 1111;
+    background: $white;
+
+    img{
+        object-fit: contain;
+    }
+}

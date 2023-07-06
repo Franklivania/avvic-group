@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.scss';
 import { Link, useLocation } from 'react-router-dom';
 import 'animate.css/animate.min.css';
 import logo from '../../assets/avvic_logo.png';
 import Button from '../Button/Button';
+import Loader from '../../Pages/Loader/Loader';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -77,16 +78,32 @@ function Navigation({ className }) {
 function Navitems({ title, link, children, onMouseEnter, onMouseLeave }) {
   const { pathname } = useLocation();
   const isActive = link === pathname;
+  const [showLoader, setShowLoader] = useState(false);
+
+  useEffect(() => {
+    setShowLoader(true);
+
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [link]);
 
   return (
-    <Link
-      to={link}
-      className={`link ${isActive ? 'active' : ''}`}
-      onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}
-    >
-      {title}
-      {children}
-    </Link>
+    <>
+      <Link
+        to={link}
+        className={`link ${isActive ? 'active' : ''}`}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {title}
+        {children}
+      </Link>
+
+      {showLoader && <Loader />}
+    </>
   );
 }
 

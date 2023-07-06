@@ -35,7 +35,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding: 4em;
+        padding: 4em 8em;
         gap: 10em;
         font-family: $font;
 
@@ -47,9 +47,10 @@
             aside{
                 padding: 1em;
                 text-align: justify;
+                color: $gray;
 
                 h1{
-                    color: $main;
+                    color: $blue;
                 }
 
                 ul{
@@ -91,12 +92,16 @@
             gap: 3em;
 
             h1{
-                color: $main;
+                color: $blue;
             }
 
             article{
                 align-self: center;
                 text-align: center;
+
+                p{
+                    padding: 0 10em;
+                }
             }
 
             aside{
@@ -117,7 +122,7 @@
     #career-foots{
         position: relative;
         width: 90%;
-        margin: 2em 0;
+        margin: 4em 0;
         padding: 1em;
         background: rgba($black , 0.3);
         border-radius: $small-radius;
@@ -127,6 +132,10 @@
         flex-wrap: wrap;
         align-self: center;
         justify-content: space-evenly;
+
+        p{
+            color: $black;
+        }
     }
 
 }

@@ -26,6 +26,11 @@ nav, menu{
         transition: transform .3s ease-in-out;
         color: $accent; 
         text-transform: uppercase;
+        border: none;
+        outline: none;
+        background: none;
+        font-family: $font;
+        cursor: pointer;
 
         &:hover{
             color: rgba($accent, 0.5);
@@ -61,6 +66,8 @@ nav, menu{
             padding: .3em;
             border-radius: $small-radius;
             font-size: $footer-text;
+            width: 100%;
+            text-align: left;
             
             &:hover{
                 transform: scale(1.05);

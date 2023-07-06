@@ -5,7 +5,6 @@
     width: $width;
     display: flex;
     flex-direction: column;
-    // gap: 6em;
     overflow: hidden;
     
     h1{
@@ -17,18 +16,24 @@
     #ac-market-content, #ac-business-content{
         position: relative;
         width: 100%;
-        padding: 4em;
+        padding: 4em 6em;
     }
     
     #ac-market-content{
+        position: relative;
         display: flex;
         gap: 2em;
 
         #market-content{
-            width: 100%;
+            position: relative;
+            width: 70%;
             display: flex;
             flex-direction: column;
             gap: 1em;
+
+            img{
+                width: 100%;
+            }
 
             span{
                 padding: 1em;
