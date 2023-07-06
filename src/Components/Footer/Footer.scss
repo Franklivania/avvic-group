@@ -1,201 +1,202 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
-footer{
+footer {
+  position: relative;
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 4em 9em;
+  background: $avvicblue;
+  color: $white;
+  font-family: $font;
+  // font-size: $text;
+
+  #foot-logo {
     position: relative;
-    width: $width;
+    width: calc($wk-width * 0.15);
+
+    img {
+      padding-left: 4em;
+      width: 100%;
+    }
+  }
+
+  .foot {
+    position: relative;
+    padding: 0 4em;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    flex: 1/1;
     gap: 1em;
-    padding: 2em 0;
-    background: $avvicblue;
-    color: $white;
+    width: 100%;
     font-family: $font;
-    font-size: $text;
 
-    #foot-logo{
-        position: relative;
-        width: calc($wk-width * 0.15);
-        
-        img{
-            padding-left: 4em;
-            width: 100%;
-        }
+    h2 {
+      font-weight: 400;
     }
 
-    .foot{
-        position: relative;
-        padding: 0 4em;
+    .menu,
+    .subs {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .links {
+        margin: 0.2em 0;
+        text-decoration: none;
+        color: rgba($white, 0.7);
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    aside {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 0.5em;
+
+      a {
+        color: $white;
+      }
+
+      p {
+        color: $white;
+      }
+
+      .socials {
         display: flex;
-        justify-content: space-between;
-        // flex-wrap: wrap;
-        flex: 1/1;
         gap: 1em;
-        width: 100%;
-        font-family: $font;
-        font-size: $text;
 
-        
-        h2{
-            font-family: $header-font;
-            font-weight: 400;
+        a {
+          color: $white;
+
+          &:hover {
+            color: $brown;
+          }
         }
-        
-        .menu, .subs{
-            position: relative;
-            display: flex;
-            // width: 20%;
-            flex-direction: column;
-            
-            .links{
-                margin: 0.2em 0;
-                font-family: $font;
-                text-decoration: none;
-                color: rgba($white, 0.7);
-                
-                &:hover{
-                    color: $white;
-                }
-            }
-        }
-    
-        aside{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 1em;
-            
-            a{
-                color: $white;
-                font-family: $font;
-            }
+      }
 
-            
-            .socials{
-                display: flex;
-                gap: 1em;
-                
-                a{
-                    color: $white;
-                    
-                    &:hover{
-                        color: $brown;
-                    }
-                }
-            }
-            
+      #sub {
+        text-decoration: underline;
+        margin-top: 0.3em;
+      }
 
-            #sub{
-                text-decoration: underline;
-                margin-top: .3em;
-            }
-
-            label{
-                position: relative;
-                width: calc($wk-width * 0.3);
-                display: flex;
-                // flex-direction: column;
-                gap: 1em;
-
-                input{
-                    width: 100%;
-                    outline: none;
-                    border: none;
-                    font-size: $text;
-                    padding: .5em;
-                    border-radius: $small-radius;
-                    font-family: $font;
-                }
-                button{
-                    position: relative;
-                    padding: .44em 2em;
-                    background: $avvicblue;
-                    color: $white;
-                    outline: none;
-                    border: none;
-                    border: 0.02em solid $white;
-                    border-radius: $small-radius;
-                    cursor: pointer;
-
-                    &:hover{
-                        background: $accent;
-                    }
-                }
-            }
-        }
-    }
-
-    .foots{
+      label {
         position: relative;
-        border-top: 0.01em solid $white;
-        margin: 1em;
-        padding: 1em 0;
+        width: calc($wk-width * 0.3);
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        p{
-            font-family: $font;
-        }
+        // flex-direction: column;
+        color: $white;
+        gap: 1em;
 
-        #privacy{
-            display: flex;
-            gap: 2em;
-
-            .links{
-                color: $white;
-                // text-decoration: none;
-            }
+        input {
+          width: 60%;
+          outline: none;
+          border: none;
+          font-size: $text;
+          padding: 0.5em;
+          border-radius: calc($small-radius * 2);
+          // font-family: $font;
         }
+        button {
+          position: relative;
+          padding: 0.44em 2em;
+          background: $avvicblue;
+          color: $white;
+          outline: none;
+          border: none;
+          border: 0.02em solid $white;
+          border-radius: calc($small-radius * 5);
+          cursor: pointer;
+
+          &:hover {
+            background: $accent;
+          }
+        }
+      }
     }
+  }
+
+  .foots {
+    position: relative;
+    border-top: 0.01em solid $white;
+    margin: 1em;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: $font;
+
+    p {
+      color: $white;
+    }
+
+    #privacy {
+      display: flex;
+      gap: 2em;
+
+      .links {
+        color: $white;
+        // text-decoration: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    footer{
+  footer {
+    position: relative;
+    width: $width;
+
+    .foot {
+      position: relative;
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0 2em;
+      gap: 3em;
+
+      aside {
         position: relative;
-        width: $width;
+        width: 100%;
 
-        .foot{
-            position: relative;
+        label {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          input,
+          button {
             width: 100%;
-            flex-wrap: wrap;
-
-            aside{
-                position: relative;
-                width: 100%;
-                // flex-wrap: wrap;
-                
-                label{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                
-                    input, button{
-                        width: 100%;
-                        font-size: $text;
-                    }
-                }
-            }
+            font-size: $text;
+          }
         }
-
-        .foots{
-            flex-direction: column;
-            gap: 1em;
-        }
+      }
     }
+
+    .foots {
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
-    footer{
-        #foot-logo{
-            img{
-                padding: 0 1em;
-            }
-        }
+  footer {
+    padding: 1em;
 
-        .foot{
-            padding: 1em;
-        }
+    #foot-logo {
+      position: relative;
+
+      img {
+        padding-left: 2em;
+      }
     }
+  }
 }
