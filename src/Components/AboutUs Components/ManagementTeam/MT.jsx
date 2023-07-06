@@ -34,7 +34,8 @@ const MT = () => {
             name={profile.name}
             image={profile.image}
             title={profile.title} 
-            onClick={() => handleProfileClick(index)} />
+            onClick={() => handleProfileClick(index)} 
+            className={`mt-profile`}/>
         ))}
       </div>
 

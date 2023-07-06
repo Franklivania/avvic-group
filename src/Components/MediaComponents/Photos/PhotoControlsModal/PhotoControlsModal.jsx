@@ -11,6 +11,7 @@ const PhotoControlsModal = ({
   currentSlide,
   totalSlides,
 }) => {
+    
   return (
     <div id="ph-ct-modal" className={className}>
       <div id="ph-modal-content">

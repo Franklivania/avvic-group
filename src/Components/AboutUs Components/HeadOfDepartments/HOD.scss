@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding: 4em 6em;
 
     h2{
         text-align: center;
@@ -17,13 +18,32 @@
     .hop-container{
         position: relative;
         width: 100%;
-        // display: grid;
-        // grid-template-columns: auto auto auto;
-        // place-items: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1em;
         border-radius: $small-radius;
+
+        .hop-profile{
+            position: relative;
+            width: 23.7%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #hod{
+        position: relative;
+        width: $width;
+        padding: 2em 1em;
+
+        .hop-container{
+            position: relative;
+            width: 100%;
+
+            .hop-profile{
+                width: auto;
+            }
+        }
     }
 }

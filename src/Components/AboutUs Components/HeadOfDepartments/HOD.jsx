@@ -34,7 +34,8 @@ const HOD = () => {
             name={profile.name}
             image={profile.image} 
             title={profile.title} 
-            onClick={() => handleProfileClick(index)} />
+            onClick={() => handleProfileClick(index)}
+            className={`hop-profile`} />
         ))}
       </div>
 
