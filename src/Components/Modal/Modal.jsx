@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.scss'
 import 'animate.css'
 
-const Modal = ({closeModal, title, text, image, children}) => {
+const Modal = ({closeModal, name, title, text, image, children}) => {
   return (
     <div id='modal'>
 
@@ -14,7 +14,8 @@ const Modal = ({closeModal, title, text, image, children}) => {
             <div className="container">
                 <img src={image} alt={title} />
                 <aside>
-                    <h1>{title}</h1>
+                    <h1>{name}</h1>
+                    <h3>{title}</h3>
                     <p>{text}</p>
                     {children}
                 </aside>

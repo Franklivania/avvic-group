@@ -22,8 +22,6 @@ const Footer = () => {
                 <h2>Subscribe</h2>
                 <p>Join our newsletter to stay up to date on latest information</p>
 
-                <br />
-
                 <label htmlFor="">
                     <input type="email" name="email" id="email" placeholder='Your Email Address' />
                     <button type='button'>

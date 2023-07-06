@@ -27,13 +27,13 @@
     color: $black;
     text-align: center;
 
-    h5{
-      color: $main;
+    h6{
+      color: $blue;
     }
 
-    p{
+    small{
       color: $gray;
-      font-size: calc($text * 0.7);
+      font-size: calc($text * 0.6);
     }
   }
 }

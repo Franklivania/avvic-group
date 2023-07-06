@@ -31,7 +31,7 @@ const MT = () => {
         {mt.map((profile, index) => (
           <Profile 
             key={index} 
-            name={profile.name}
+            abbr={profile.abbr}
             image={profile.image}
             title={profile.title} 
             onClick={() => handleProfileClick(index)} 
@@ -42,6 +42,7 @@ const MT = () => {
       {activeProfile !== null && (
         <Modal 
           closeModal={handleCloseModal}
+          name={mt[activeProfile].name}
           title={mt[activeProfile].title }
           text={mt[activeProfile].content[0].about}
           image={mt[activeProfile].image} 

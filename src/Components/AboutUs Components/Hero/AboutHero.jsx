@@ -7,7 +7,7 @@ const AboutHero = () => {
   return (
     <div id='heros'>
       <img src={aboutimg} alt="" />
-        <h1>ABOUT US</h1>
+        <h1>About Us</h1>
     </div>
   )
 }

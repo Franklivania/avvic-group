@@ -16,7 +16,7 @@
     #ac-market-content, #ac-business-content{
         position: relative;
         width: 100%;
-        padding: 4em 6em;
+        padding: 0 10em;
     }
     
     #ac-market-content{
@@ -52,8 +52,7 @@
         display: grid;
         grid-template-columns: auto auto;
         gap: 4em;
-        // margin-left: 4em;
-        padding: 4em 10em 10em 10em;
+        padding: 0 12em 10em 12em;
         
         
         #business-content{

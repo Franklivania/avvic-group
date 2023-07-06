@@ -10,7 +10,6 @@ footer{
     background: $avvicblue;
     color: $white;
     font-family: $font;
-    // font-size: $text;
 
     #foot-logo{
         position: relative;
@@ -27,11 +26,11 @@ footer{
         padding: 0 4em;
         display: flex;
         justify-content: space-between;
-        // flex-wrap: wrap;
         flex: 1/1;
         gap: 1em;
         width: 100%;
         font-family: $font;
+        font-size: calc($text * 0.8);
 
         
         h2{
@@ -58,8 +57,6 @@ footer{
             position: relative;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            flex-wrap: wrap;
             gap: 1em;
             
             a{

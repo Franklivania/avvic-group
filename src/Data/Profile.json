@@ -4,6 +4,7 @@
         {
             "id": 1,
             "name": "O’BRIEN OFORDU",
+            "abbr": "O’BRIEN OFORDU",
             "image": "/Profiles/ofordu.jpg",
             "title": "Chairman, Board of Directors​",
             "content" : [
@@ -16,6 +17,7 @@
         {
             "id": 2,
             "name": "UCHENNA CHUKWUEKE",
+            "abbr": "UCHENNA CHUKWUEKE",
             "image": "/Profiles/uchenna.jpg",
             "title": "Group Managing Director/Chief Executive Officer​​",
             "content" : [
@@ -28,6 +30,7 @@
         {
             "id": 3,
             "name": "OBIOMA AKPAGBULA",
+            "abbr": "OBIOMA AKPAGBULA",
             "image": "/Profiles/obinna.jpg",
             "title": "Executive Director, FST​",
             "content" : [
@@ -40,6 +43,7 @@
         {
             "id": 4,
             "name": "SAMUEL NDUBUISI OSEAFIANA",
+            "abbr": "SAMUEL NDUBUISI OSEAFIANA",
             "image": "/Profiles/sammy.jpg",
             "title": "Executive Director GRC​",
             "content" : [
@@ -52,6 +56,7 @@
         {
             "id": 5,
             "name": "ODERA OGBODO",
+            "abbr": "ODERA OGBODO",
             "image": "/Profiles/odera.jpeg",
             "title": "Executive Director TRD​",
             "content" : [
@@ -63,6 +68,7 @@
         },
         {
             "id": 6,
+            "abbr": "PROF. PASCHAL OKOLIE",
             "name": "PROF. PASCHAL ILOEGBU PETER OKOLIE (JP)",
             "image": "/Profiles/paschal.jpeg",
             "title": "Non Executive Director​",
@@ -76,6 +82,7 @@
         {
             "id": 7,
             "name": "HRH IGWE JOSEPH EMEKA OGBODO",
+            "abbr": "HRH IGWE JOSEPH EMEKA OGBODO",
             "image": "/Profiles/hrh.jpg",
             "title": "Non Executive Director​",
             "content" : [
@@ -88,6 +95,7 @@
         {
             "id": 8,
             "name": "CHIJIOKE JUDE NNEJI",
+            "abbr": "CHIJIOKE JUDE NNEJI",
             "image": "/Profiles/kenneth.jpg",
             "title": "Non Executive Director​",
             "content" : [
@@ -100,6 +108,7 @@
         {
             "id": 9,
             "name": "UDOKA MICHAEL MADUKA",
+            "abbr": "UDOKA MICHAEL MADUKA",
             "image": "/Profiles/maduka.jpeg",
             "title": "Non Executive Director",
             "content" : [
@@ -115,6 +124,7 @@
         {
             "id": 1,
             "name": "UCHENNA CHUKWUEKE",
+            "abbr": "UCHENNA CHUKWUEKE",
             "image": "/Profiles/uchenna.jpg",
             "title": "Group Managing Director/Chief Executive Officer​​",
             "content" : [
@@ -127,6 +137,7 @@
         {
             "id": 2,
             "name": "OBIOMA AKPAGBULA",
+            "abbr": "OBIOMA AKPAGBULA",
             "image": "/Profiles/obinna.jpg",
             "title": "Executive Director FST​",
             "content" : [
@@ -139,6 +150,7 @@
         {
             "id": 3,
             "name": "SAMUEL NDUBUISI OSEAFIANA",
+            "abbr": "SAMUEL NDUBUISI OSEAFIANA",
             "image": "/Profiles/sammy.jpg",
             "title": "Executive Director GRC​",
             "content" : [
@@ -151,6 +163,7 @@
         {
             "id": 4,
             "name": "ODERA OGBODO",
+            "abbr": "ODERA OGBODO",
             "image": "/Profiles/odera.jpeg",
             "title": "Executive Director TRD​",
             "content" : [
@@ -166,6 +179,7 @@
         {
             "id": 1,
             "name": "CHIDINMA OKORIE",
+            "abbr": "CHIDINMA OKORIE",
             "image": "/Profiles/chidimma.jpg",
             "title": "HEAD OF OPERATIONS",
             "content" : [
@@ -178,6 +192,7 @@
         {
             "id": 2,
             "name": "KENNETH CHUKWUNWEIZE CHUKWUEDO",
+            "abbr": "KENNETH C. CHUKWUEDO",
             "image": "/Profiles/ken.jpeg",
             "title": "HEAD, STRATEGY AND BUSINESS DEVELOPMENT",
             "content" : [
@@ -190,6 +205,7 @@
         {
             "id": 3,
             "name": "REV. SR. CHINEM EZENWATA",
+            "abbr": "REV. SR. CHINEM EZENWATA",
             "image": "/Profiles/sr.jpeg",
             "title": "LEAD, AUDIT, CONTROL & COMPLIANCE",
             "content" : [
@@ -202,6 +218,7 @@
         {
             "id": 4,
             "name": "OLUCHI NDUBISI",
+            "abbr": "OLUCHI NDUBISI",
             "image": "/Profiles/oluchi.jpeg",
             "title": "HEAD, HUMAN RESOURCES",
             "content" : [

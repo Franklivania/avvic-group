@@ -9,7 +9,7 @@
     background: rgba($black, 0.6);
     display: grid;
     place-content: center;
-    z-index: 30;
+    z-index: 999;
 
     .content{
         position: relative;
@@ -58,20 +58,22 @@
                 display: flex;
                 flex-direction: column;
                 gap: 2em;
-                
-                
+
                 h1{
+                    color: $main;
+                    padding: 0 2em 0 0;
+                }
+                
+                
+                h3{
                     font-family: $header-font;
                     letter-spacing: 0.1em;
                     line-height: 1em;
-                    color: $main;
+                    color: $blue;
                 }
                 
                 p{
-                    font-family: $text;
-                    font-size: $text;
-                    color: $black;
-                    // letter-spacing: .3em;
+                    font-size: calc($text * 0.8);
                 }
             }
         }

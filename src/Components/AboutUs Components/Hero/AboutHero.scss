@@ -16,9 +16,9 @@
     h1{
         position: absolute;
         top: 35%;
-        left: 40%;
+        left: 43%;
         font-family: $header-font;
-        font-size: clamp($text, 5vw, $large-text);
+        font-size: clamp($text, 5vw, calc($large-text * 0.9));
         font-weight: 500;
     }
 }

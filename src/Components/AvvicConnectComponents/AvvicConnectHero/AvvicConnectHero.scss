@@ -7,7 +7,7 @@
     align-items: center;
     font-family: $font;
     gap: 5em;
-    padding: 4em;
+    padding: 4em 10em;
     background: linear-gradient(
         135deg,
         rgba($white, 1) 60%,
@@ -80,21 +80,6 @@
         h1{
             color: $blue;
             font-weight: 400;
-        }
-
-        #connect-socials{
-            position: relative;
-            display: flex;
-            gap: 1em;
-
-            a{
-                color: $gray;
-                text-decoration: none;
-
-                &:hover{
-                    color: $avvicblue;
-                }
-            }
         }
     }
 }

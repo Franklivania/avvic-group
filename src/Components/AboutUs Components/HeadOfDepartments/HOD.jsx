@@ -31,7 +31,7 @@ const HOD = () => {
         {hop.map((profile, index) => (
           <Profile 
             key={index} 
-            name={profile.name}
+            abbr={profile.abbr}
             image={profile.image} 
             title={profile.title} 
             onClick={() => handleProfileClick(index)}
@@ -42,6 +42,7 @@ const HOD = () => {
       {activeProfile !== null && (
         <Modal 
           closeModal={handleCloseModal}
+          name={hop[activeProfile].name}
           title={hop[activeProfile].title }
           text={hop[activeProfile].content[0].about}
           image={hop[activeProfile].image} 

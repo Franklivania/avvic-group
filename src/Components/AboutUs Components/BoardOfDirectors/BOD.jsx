@@ -32,8 +32,8 @@ const BOD = () => {
       <div className='bod-container'>
         {bod.map((profile, index) => (
           <Profile 
-            key={index} 
-            name={profile.name}
+            key={index}
+            abbr={profile.abbr}
             image={profile.image} 
             title={profile.title} 
             onClick={() => handleProfileClick(index)} />
@@ -43,6 +43,7 @@ const BOD = () => {
       {activeProfile !== null && (
         <Modal 
           closeModal={handleCloseModal}
+          name={bod[activeProfile].name}
           title={bod[activeProfile].title }
           text={bod[activeProfile].content[0].about}
           image={bod[activeProfile].image} 

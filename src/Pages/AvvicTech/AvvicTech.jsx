@@ -15,7 +15,7 @@ const AvvicTech = () => {
 
         <div id="tech-hero">
             <img src={hero} alt="" />
-            <h1>AVVIC <br /> TECH</h1>
+            <h1>AVVIC Tech</h1>
         </div>
 
         <AvvicTechHero />
