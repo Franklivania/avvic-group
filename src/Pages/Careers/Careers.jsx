@@ -22,7 +22,7 @@ const Careers = () => {
 
         <div id="career-hero">
             <img src={carrersimg} alt="" />
-            <h1>CAREERS</h1>
+            <h1>Careers</h1>
         </div>
 
         <div id="career-container">

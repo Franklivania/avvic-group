@@ -11,12 +11,12 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2em;
 
     .vid-display{
         position: relative;
-        height: calc($wk-height * 0.3);
+        height: clamp(($wk-height * 0.3), 5vw, auto);
         width: calc($wk-width * 0.3);
+        color: $gray;
 
         video{
             height: fit-content;

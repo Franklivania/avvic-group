@@ -23,6 +23,7 @@ section{
         width: calc($wk-width * 0.2);
         overflow: hidden;
         cursor: pointer;
+        color: $gray;
         
         img{
             height: 95%;

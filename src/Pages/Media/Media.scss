@@ -107,10 +107,11 @@
         background: $avvicblue;
         border-radius: $small-radius;
         color: $white;
-        width: calc($wk-width * 0.1);
+        width: calc($wk-width * 0.05);
+        font-size: calc($text * 0.8);
 
         &:hover{
-            background: $blue;
+            background: $accent;
         }
     }
 }

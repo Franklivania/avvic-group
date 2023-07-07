@@ -13,5 +13,6 @@
 
     img{
         object-fit: contain;
+        width: calc($wk-width * 0.1);
     }
 }

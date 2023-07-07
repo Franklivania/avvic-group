@@ -20,7 +20,7 @@ const Media = () => {
 
       <div id="media-hero">
         <img src={hero} alt="" />
-        <h1>MEDIA</h1>
+        <h1>Media</h1>
       </div>
 
       {!showContent ? (

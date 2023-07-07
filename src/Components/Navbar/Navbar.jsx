@@ -9,6 +9,18 @@ import Loader from '../../Pages/Loader/Loader';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const [showLoader, setShowLoader] = useState(false);
+
+    useEffect(() => {
+      setShowLoader(true);
+
+      const timer = setTimeout(() => {
+        setShowLoader(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }, [Navigation]);
+
   function handleToggle() {
     setOpen((prevOpen) => !prevOpen);
   }
@@ -42,6 +54,8 @@ const Navbar = () => {
           </div>
         )}
       </menu>
+
+      {showLoader && <Loader />}
     </>
   );
 };
@@ -78,17 +92,6 @@ function Navigation({ className }) {
 function Navitems({ title, link, children, onMouseEnter, onMouseLeave }) {
   const { pathname } = useLocation();
   const isActive = link === pathname;
-  const [showLoader, setShowLoader] = useState(false);
-
-  useEffect(() => {
-    setShowLoader(true);
-
-    const timer = setTimeout(() => {
-      setShowLoader(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, [link]);
 
   return (
     <>
@@ -101,8 +104,6 @@ function Navitems({ title, link, children, onMouseEnter, onMouseLeave }) {
         {title}
         {children}
       </Link>
-
-      {showLoader && <Loader />}
     </>
   );
 }
