@@ -36,7 +36,7 @@
         display: flex;
         flex-direction: column;
         padding: 4em 8em;
-        gap: 8em;
+        gap: 6em;
         font-family: $font;
 
         .top{
@@ -51,6 +51,7 @@
 
                 h1{
                     color: $blue;
+                    font-size: calc($large-text * 0.7);
                 }
 
                 ul{
@@ -69,6 +70,7 @@
                             background-size: contain;
                             height: 1em;
                             width: 1em;
+                            margin: 0 1em;
                         }
                     }
                 }
@@ -92,6 +94,7 @@
 
             h1{
                 color: $blue;
+                font-size: calc($large-text * 0.7);
             }
 
             article{

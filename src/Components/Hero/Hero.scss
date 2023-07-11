@@ -3,7 +3,7 @@
 #hero{
     position: relative;
     width: $width;
-    height: calc($height * 0.6);
+    height: calc($height * 0.67);
     display: flex;
     flex-direction: column;
     padding: 0 1em;
@@ -44,7 +44,7 @@
             h2{
                 font-size: clamp(calc($large-text * 0.4), 5vw, calc($large-text * 0.3));
                 font-weight: 300;
-                margin-top: 15.5%;
+                margin-top: 19%;
                 padding: 0 6em;
             }
         }
@@ -61,8 +61,8 @@
         z-index: 20;
 
         .indicator{
-            height: calc($wk-height * 0.01);
-            width: calc($wk-width * 0.01);
+            height: calc($wk-height * 0.005);
+            width: calc($wk-width * 0.005);
             border-radius: $radius;
             background: $white;
             cursor: pointer;

@@ -15,7 +15,6 @@
         position: relative;
         display: flex;
         align-items: flex-start;
-        gap: 2em;
 
         aside{
             position: relative;
@@ -28,6 +27,7 @@
                 color: $main;
                 font-size: clamp(calc($large-text * 0.5), 5vw, $large-text); 
                 text-align: right;
+                line-height: .9em;
             }
         }
 
@@ -63,8 +63,9 @@
     
             .container{
                 position: relative;
-                width: 45%;
+                width: 50%;
                 margin: 1em 0;
+                padding: 0 3em;
                 text-align: justify;
     
                 h2{
@@ -86,6 +87,9 @@
         }
     }
 
+    // #hist-bottom{
+    //     gap: 2em;
+    // }
     
 
     span{
@@ -166,6 +170,7 @@
                 .container{
                     position: relative;
                     width: 100%;
+                    padding: 0;
     
                     h2{
                         width: 100%;

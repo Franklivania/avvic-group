@@ -30,10 +30,10 @@ function App() {
           <Route path='' element={<Landing />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/contact' element={<ContactUs />} />
-          <Route path='/careers' element={<Careers />} />
           <Route path='/tech' element={<AvvicTech />} />
           <Route path='/consult' element={<AvvicConsult />} />
           <Route path='/connect' element={<AvvicConnect />} />
+          <Route path='/careers' element={<Careers />} />
           <Route path='/media' element={<Media />} />
         </Routes>
       </Router>
