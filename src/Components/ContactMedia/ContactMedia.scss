@@ -1,12 +1,12 @@
 @import '../../App.scss';
 
-#media{
+#contact-media{
     position: relative;
-    width: $width;
-    font-family: $font;
+    width: 50%;
     font-size: $text;
     padding: 1em;
     text-align: justify;
+    font-size: calc($text * 0.7);
 
     #otigba{
         width: 100%;
@@ -27,6 +27,16 @@
             gap: 1em;
             text-decoration: none;
             color: $main;
+
+            &:hover{
+                color: $accent;
+            }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact-media{
+        width: 100%;
     }
 }

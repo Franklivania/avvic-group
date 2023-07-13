@@ -29,9 +29,10 @@
     }
 
     #contact-container{
+        position: relative;
         display: flex;
         align-items: flex-start;
-        padding: 4em 6em;
+        // padding: 4em 14em;
         gap: 2em;
 
         span{
@@ -65,11 +66,27 @@
     }
 }
 
-@media screen and (min-width: 661px) {
+@media screen and (min-width: 900px) {
     #contact{
         position: relative;
 
         #contact-container{
+            padding: 4em 10em;
+
+            span{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #contact{
+        position: relative;
+
+        #contact-container{
+            padding: 4em;
             
             span{
                 display: none;

@@ -3,7 +3,7 @@ import './ContactMedia.scss'
 
 const ContactMedia = ({className}) => {
     return(
-        <div id="media" className={className}>
+        <div id="contact-media" className={className}>
             <p>
                 At AVVIC, we ensure to give you the best possible results for your time
                 As such, we prioritise customer satisfacton. 

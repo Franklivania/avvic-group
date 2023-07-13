@@ -16,7 +16,7 @@
     }
     p{
         font-family: $font;
-        font-size: calc($text * 1.2);
+        font-size: $text;
         padding: 0 16em;
     }
 }

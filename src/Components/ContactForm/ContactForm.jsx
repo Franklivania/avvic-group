@@ -9,22 +9,22 @@ const ContactForm = ({className}) => {
         <h1>Get in touch with us</h1>
 
         <label htmlFor="">
-            <h4>Full Name</h4>
+            <h5>Full Name</h5>
             <Input type={"text"} name={"name"} placeholder={"Your full name"} className={"input"}/>
         </label>
 
         <label htmlFor="">
-            <h4>Email Address</h4>
+            <h5>Email Address</h5>
             <Input type={"email"} name={"email"} placeholder={"Your Email Address"} className={"input"}/>
         </label>
 
         <label htmlFor="">
-            <h4>Phone Number</h4>
+            <h5>Phone Number</h5>
             <Input type={"tel"} name={"phone"} placeholder={"Your Phone Number"} className={"input"}/>
         </label>
 
         <label htmlFor="">
-            <h4>Your Message</h4>
+            <h5>Your Message</h5>
             <textarea name="message" id="message" placeholder='Your message please'></textarea>
         </label>
 

@@ -14,7 +14,7 @@ const ContactUs = () => {
 
         <div id="contact-hero">
             <img src={contactimg} alt="" />
-            <h1>CONTACT US</h1>
+            <h1>Contact Us</h1>
         </div>
 
         <div id="contact-container">

@@ -53,6 +53,10 @@
         padding: 1em;
         text-align: left;
 
+        h1{
+            padding: 0 .5em;
+        }
+
         .even-id, .odd-id{
             flex-direction: column;
             gap: 1em;

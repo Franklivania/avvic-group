@@ -22,12 +22,10 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: .3em;
-        padding: .3em;
 
-        h4{
+        h5{
             font-family: $header-font;
-            color: $accent;
+            color: $main;
             letter-spacing: .1em;
         }
 
@@ -35,10 +33,10 @@
             width: 100%;
             outline: none;
             resize: none;
-            border: 0.02em solid $sub;
+            border: 0.02em solid $blue;
             border-radius: $small-radius;
             font-family: $font;
-            font-size: $text;
+            font-size: calc($text * 0.7);
             color: $black;
         }
 
