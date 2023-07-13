@@ -9,12 +9,12 @@ const BOD = () => {
 
   useEffect(() => {
     import('../../../Data/Profile.json')
-      .then(data => {
-        setBod(data.default.bod);
-      })
-      .catch(error => {
-        console.log('Error getting information', error);
-      });
+    .then(data => {
+      setBod(data.default.bod);
+    })
+    .catch(error => {
+      console.log('Error getting information', error);
+    });
   }, []);
 
   function handleProfileClick(index) {

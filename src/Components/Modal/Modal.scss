@@ -109,8 +109,16 @@
     #modal{
 
         .content{
-            width: 80%;
-            height: calc($wk-height * 0.3);
+            width: 95%;
+            padding: 0;
+            height: calc($wk-height * 0.35);
+
+            .container{
+
+                aside{
+                    padding: .5em 1em;
+                }
+            }
         }
     }
 }

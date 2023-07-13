@@ -11,13 +11,13 @@
         font-size: $large-text;
         color: $accent;
         font-weight: 700;
-        padding: 0 8.5em;
+        -ms-padding: 0 8.5em;
+        padding: 0 8.7em;
     }
     p{
         font-family: $font;
-        font-size: $text;
-        font-size: $text;
-        padding: 0 20em;
+        font-size: calc($text * 1.2);
+        padding: 0 16em;
     }
 }
 
